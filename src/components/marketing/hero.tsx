@@ -56,6 +56,10 @@ export function Hero({ onBuy }: { onBuy: () => void }) {
                 <span className="cta-sheen absolute inset-y-0 w-16 bg-black/10 blur-md" />
                 <Download className="h-4 w-4" />
                 {t("hero.cta")}
+                {/* Locale-neutral price nudge — the number sells before the scroll */}
+                <span className="rounded-full bg-black/10 px-2 py-0.5 text-[11px] font-extrabold tabular-nums">
+                  €5.99
+                </span>
                 <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
               </button>
               <a
