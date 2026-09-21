@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://polar.sh/docs/integrate/sdk/adapters/laravel",
+    "name": "Laravel - Polar",
+    "snippet": "To create a checkout to show only a single payment, pass a single items to the array of products when creating the checkout.",
+    "host_name": "polar.sh",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/Climactic/laravel-polar",
+    "name": "Climactic/laravel-polar: Polar.sh Integration for Laravel - GitHub",
+    "snippet": "The component accepts the normal props that a link element accepts. You can change the theme of the embedded checkout by using the following prop: <x-polar ...",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.referly.so/docs/help-center/integrations/polar",
+    "name": "Polar - referly.so",
+    "snippet": "Aug 31, 2026 · querySelectorAll('a[href*=\"buy.polar.sh\"]').forEach((link) => { if ... Pay different rates on different Polar products. Tracking ...",
+    "host_name": "www.referly.so",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://admaxxer.com/documentation/revenue/polar",
+    "name": "Track Polar Revenue: Attribution Setup in 5 Min | Admaxxer",
+    "snippet": "Name it Admaxxer Revenue Read. Scopes: orders:read, subscriptions:read, products:read. Nothing else. Copy the token value and paste it into Admaxxer › Revenue ...",
+    "host_name": "admaxxer.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.framer.com/@soubhagya/?via=soubhagya-sahu&dub_id=FahvjfE9di1iaXBp",
+    "name": "Soubhagya Sahu - Framer",
+    "snippet": "5 days ago · You want to use @polar_sh for selling products in FramerYou can checkout polar checkout plugin ... https://buy.polar.sh ...",
+    "host_name": "www.framer.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.gitcode.com/a7b5d99ab1b417c22d499afe5166e32b.html",
+    "name": "Polar 支付方式嵌入实战：使用`@polar-sh/checkout` 集成Payment",
+    "snippet": "6 days ago · Props. Prop, Type, Default, Description. sessionToken, string, —, 必填。 来自 POST /v1/customer-sessions 的会话令牌。 theme, 'light' | 'dark' ...",
+    "host_name": "blog.gitcode.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stripe.com/connect",
+    "name": "Stripe Connect | Platform and Marketplace Payment Solutions",
+    "snippet": "The world's most successful platforms and marketplaces, including Shopify and DoorDash, use Stripe Connect to embed payments into their products.",
+    "host_name": "stripe.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.digikey.com/en/products/detail/cornell-dubilier-knowles/228CKE050MQW/5344037",
+    "name": "228CKE050MQW Cornell Dubilier Knowles | Aluminum Electrolytic",
+    "snippet": "... CHECKOUT. ATTENTION: Due to high order volume, orders may require an additional business day to process. Products. Back. New Products · Automation & Control.",
+    "host_name": "www.digikey.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

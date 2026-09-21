@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://polar.sh",
+    "name": "Embedded Checkout - Polar",
+    "snippet": "List the hosts allowed to embed your checkout under Settings → Preferences → Embedding . An embedded checkout only opens on a host you've listed, and the ... Read more",
+    "host_name": "polar.sh",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "Climactic/laravel-polar: Polar.sh Integration for Laravel",
+    "snippet": "Polar includes a JavaScript script that you can use to initialize the Polar Embedded Checkout . If you going to use this functionality, you can use the @ ... Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://packagist.org",
+    "name": "danestves/laravel-polar",
+    "snippet": "May 22, 2026 — Polar Script . Polar includes a JavaScript script that you can use to initialize the Polar Embedded Checkout . If you going to use this ... Read more",
+    "host_name": "packagist.org",
+    "rank": 2,
+    "date": "May 22, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://pageai.pro",
+    "name": "Long running AI Coding Agents with the Ralph Loop",
+    "snippet": "Feb 22, 2026 — For payment, I want to use Polar . sh , but I am not sure exactly how to implement the embedded checkout . Interview me about it and make sure ... Read more",
+    "host_name": "pageai.pro",
+    "rank": 3,
+    "date": "Feb 22, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://whisperstream.io",
+    "name": "Website Privacy Policy",
+    "snippet": "Aug 17, 2026 — 3.3 Polar embedded checkout data . When you click a purchase button on the Website, the Website creates a checkout session through Polar's API ... Read more",
+    "host_name": "whisperstream.io",
+    "rank": 4,
+    "date": "Aug 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.referly.so",
+    "name": "All Referly Affiliate Software Features",
+    "snippet": "Polar logo Polar Payment links and embedded checkout . All integrations. Case ... < script src =\"https://referly.so/t. js \". data -program=\"acme\"></script>. Click ... Read more",
+    "host_name": "www.referly.so",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  }
+]

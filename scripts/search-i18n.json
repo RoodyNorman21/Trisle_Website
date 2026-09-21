@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://nextjs.org",
+    "name": "Guides: Internationalization",
+    "snippet": "Mar 3, 2026 — You can provide a list of locales , the default locale , and domain-specific locales and Next . js will automatically handle the routing . The i18n ... Read more",
+    "host_name": "nextjs.org",
+    "rank": 0,
+    "date": "Mar 3, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "App router withoout i18n routing - switch locale from client",
+    "snippet": "Jul 16, 2024 — Hello,. I have been trying to implement this system, but the documentation is not very precise on the topic of \" without i18n routing \". Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "Jul 16, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://i18nexus.com",
+    "name": "Next.js App Router with react-intl (Tutorial)",
+    "snippet": "In this tutorial, we are going to learn how to set up internationalized routing and react -intl in a Next . js app using the App Router .",
+    "host_name": "i18nexus.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://phrase.com",
+    "name": "Next.js 13/14 App Router Localization with next-intl",
+    "snippet": "Jul 31, 2025 — Install and set up next -intl. 2. Use t() for component string translations. 3. Configure localized routing . 4. Build a language switcher. 5 ... Read more",
+    "host_name": "phrase.com",
+    "rank": 3,
+    "date": "Jul 31, 2025",
+    "favicon": ""
+  }
+]
