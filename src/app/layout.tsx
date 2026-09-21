@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { I18nProvider } from "@/i18n/context";
 import en from "./../i18n/dictionaries/en.json";
 import { JsonLd } from "@/components/seo/json-ld";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -142,6 +143,8 @@ export default function RootLayout({
         <JsonLd data={productJsonLd()} />
         <JsonLd data={faqJsonLd()} />
         <I18nProvider>{children}</I18nProvider>
+        {/* Renders nothing (and ships zero JS) until NEXT_PUBLIC_GA_MEASUREMENT_ID is set */}
+        <GoogleAnalytics />
         <Toaster />
       </body>
     </html>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PurchaseSuccess } from "@/components/marketing/purchase-success";
+import { PurchaseEvent } from "@/components/analytics/purchase-event";
 
 export const metadata: Metadata = {
   title: "Trisle — Purchase complete",
@@ -14,6 +15,8 @@ export default function SuccessPage() {
       {/* Read by I18nProvider so the live tab title is localized on this page too */}
       <meta name="i18n-title" content="success.metaTitle" />
       <PurchaseSuccess />
+      {/* GA4 purchase conversion — only fires with ?checkout_id= in the URL */}
+      <PurchaseEvent />
     </>
   );
 }
