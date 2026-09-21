@@ -182,6 +182,18 @@
   animation: marquee-x 36s linear infinite;
 }
 
+/* Reverse marquee — drifts left → right (social proof ticker) */
+.animate-marquee-reverse {
+  animation: marquee-x 48s linear infinite reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-reverse {
+    animation: none;
+  }
+}
+
 /* Soft pulsing status dot */
 @keyframes status-pulse {
   0%, 100% { opacity: 0.35; }

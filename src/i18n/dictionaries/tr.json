@@ -213,5 +213,12 @@
   "success.step3.desc": "Siparişiniz veya kurulumunuzla ilgili belirsizlikler mi var? Makbuz e-postanıza yanıt verin — doğrudan bize ulaşır — veya ana sayfadaki SSS bölümüne göz atın.",
   "success.cta.home": "Ana sayfaya geri dön",
   "success.cta.faq": "SSS'yi oku",
-  "success.note": "Bu sayfa satın alma kanıtınızdır — şimdi kapatabilirsiniz. Fikriniz mi değişti? Her sipariş, 7 günlük, sormadan para iade politikamızla kapsanmaktadır."
+  "success.note": "Bu sayfa satın alma kanıtınızdır — şimdi kapatabilirsiniz. Fikriniz mi değişti? Her sipariş, 7 günlük, sormadan para iade politikamızla kapsanmaktadır.",
+  "proof.aria": "Trisle güven göstergeleri",
+  "proof.1": "1.000'den fazla kişi Trisle'i çoktan satın aldı",
+  "proof.2": "7 gün içinde koşulsuz iade",
+  "proof.3": "Tek ödeme — sonsuza dek senin",
+  "proof.4": "%100 cihazda. Sıfır izleme.",
+  "proof.5": "Ödemeler Polar güvencesiyle",
+  "proof.6": "İki dakikadan kısa sürede kurulum"
 }

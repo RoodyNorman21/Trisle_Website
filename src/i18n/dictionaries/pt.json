@@ -213,5 +213,12 @@
   "success.step3.desc": "Algo não está claro sobre seu pedido ou configuração? Responda ao e-mail do seu recibo — ele chega diretamente a nós — ou consulte as perguntas frequentes na página inicial.",
   "success.cta.home": "Voltar à página inicial",
   "success.cta.faq": "Ler as perguntas frequentes",
-  "success.note": "Esta página é sua comprovação de compra — você pode fechá-la agora. Mudou de ideia? Todo pedido é coberto por nossa política de reembolso de 7 dias sem perguntas."
+  "success.note": "Esta página é sua comprovação de compra — você pode fechá-la agora. Mudou de ideia? Todo pedido é coberto por nossa política de reembolso de 7 dias sem perguntas.",
+  "proof.aria": "Destaques de confiança do Trisle",
+  "proof.1": "Mais de 1.000 pessoas já compraram o Trisle",
+  "proof.2": "Devoluções em 7 dias, sem perguntas",
+  "proof.3": "Um pagamento — para sempre seu",
+  "proof.4": "100% no dispositivo. Zero rastreamento.",
+  "proof.5": "Pagamentos protegidos pelo Polar",
+  "proof.6": "Configuração em menos de dois minutos"
 }

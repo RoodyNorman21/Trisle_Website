@@ -11,6 +11,7 @@ import { HowItWorks } from "@/components/marketing/how-it-works";
 import { Navbar } from "@/components/marketing/navbar";
 import { Pricing } from "@/components/marketing/pricing";
 import { Screenshots } from "@/components/marketing/screenshots";
+import { SocialProof } from "@/components/marketing/social-proof";
 
 function scrollToPricing() {
   document
@@ -34,6 +35,7 @@ export default function Home() {
         <Customize />
         <HowItWorks />
         <Screenshots />
+        <SocialProof />
         <Pricing />
         <Faq />
       </main>

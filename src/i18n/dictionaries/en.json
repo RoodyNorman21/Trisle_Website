@@ -238,5 +238,13 @@
   "success.step3.desc": "Anything unclear about your order or setup? Reply to your receipt email — it reaches us directly — or browse the FAQ on the homepage.",
   "success.cta.home": "Back to homepage",
   "success.cta.faq": "Read the FAQ",
-  "success.note": "This page is your proof of purchase — you can close it now. Changed your mind? Every order is covered by our 7-day, no-questions-asked refund policy."
+  "success.note": "This page is your proof of purchase — you can close it now. Changed your mind? Every order is covered by our 7-day, no-questions-asked refund policy.",
+
+  "proof.aria": "Trisle trust highlights",
+  "proof.1": "1,000+ people already bought Trisle",
+  "proof.2": "7-day refunds, no questions asked",
+  "proof.3": "One payment — yours forever",
+  "proof.4": "100% on-device. Zero tracking.",
+  "proof.5": "Payments secured by Polar",
+  "proof.6": "Set up in under two minutes"
 }

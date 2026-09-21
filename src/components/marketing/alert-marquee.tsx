@@ -25,7 +25,7 @@ const CHIPS = [
 
 /** Slow, edge-faded marquee of the alert types Trisle renders. */
 export function AlertMarquee() {
-  const { t } = useI18n();
+  const { t, dir } = useI18n();
   const row = [...CHIPS, ...CHIPS];
   return (
     <section
@@ -34,11 +34,14 @@ export function AlertMarquee() {
     >
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-black to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-black to-transparent" />
-      <div className="overflow-hidden">
+      {/* dir=ltr on the WRAPPER so the wide track stays left-aligned in RTL pages
+          and the -50% loop never drifts off-screen; each chip restores page dir. */}
+      <div dir="ltr" className="overflow-hidden">
         <div className="animate-marquee flex w-max items-center gap-10 pr-10">
           {row.map((chip, i) => (
             <div
               key={`${chip.key}-${i}`}
+              dir={dir}
               className="flex shrink-0 items-center gap-2.5 text-zinc-500"
             >
               <chip.icon className="h-3.5 w-3.5" />
