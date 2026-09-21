@@ -198,5 +198,20 @@
   "island.nav.collapse": "Thu gọn",
   "island.nav.open": "Mở Bản đồ",
   "island.timer.label": "Bộ đếm thời gian",
-  "island.call.status": "Đã kết nối • 04:18"
+  "island.call.status": "Đã kết nối • 04:18",
+  "success.metaTitle": "Mua hàng hoàn tất — Trisle",
+  "success.title1": "Bạn đã vào.",
+  "success.title2": "Chào mừng đến với hòn đảo.",
+  "success.desc": "Giấy phép Trisle của bạn đã được xác nhận. Chúng tôi đã gửi email biên lai từ Polar — nó chứa chi tiết đơn hàng và mọi thứ bạn cần để bắt đầu.",
+  "success.reference": "Mã tham chiếu đơn hàng",
+  "success.next": "Tiếp theo sẽ xảy ra gì",
+  "success.step1.title": "Kiểm tra hộp thư đến",
+  "success.step1.desc": "Biên lai của bạn sẽ đến qua email từ Polar. Nếu đơn hàng của bạn bao gồm mã giấy phép, nó sẽ có trong cùng email — hãy chờ một chút, và kiểm tra cả thư rác nếu nó đang ẩn.",
+  "success.step2.title": "Cài đặt & thiết lập",
+  "success.step2.desc": "Cài đặt Trisle trên điện thoại Android, mở ứng dụng và làm theo hướng dẫn thiết lập để cấp quyền hiển thị. Bạn sẽ sẵn sàng trong vòng hai phút.",
+  "success.step3.title": "Cần giúp đỡ?",
+  "success.step3.desc": "Có điều gì chưa rõ về đơn hàng hoặc cài đặt? Trả lời email biên lai — nó sẽ đến thẳng chúng tôi — hoặc xem FAQ trên trang chủ.",
+  "success.cta.home": "Quay lại trang chủ",
+  "success.cta.faq": "Đọc FAQ",
+  "success.note": "Trang này là bằng chứng mua hàng của bạn — bạn có thể đóng nó lại ngay bây giờ. Thay đổi ý định? Mọi đơn hàng đều được bảo hiểm bởi chính sách hoàn tiền 7 ngày, không cần hỏi của chúng tôi."
 }

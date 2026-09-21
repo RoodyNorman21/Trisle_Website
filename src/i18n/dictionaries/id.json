@@ -198,5 +198,20 @@
   "island.nav.collapse": "Ciutkan",
   "island.nav.open": "Buka Peta",
   "island.timer.label": "Pengatur waktu",
-  "island.call.status": "Terhubung • 04:18"
+  "island.call.status": "Terhubung • 04:18",
+  "success.metaTitle": "Pembelian selesai — Trisle",
+  "success.title1": "Anda masuk.",
+  "success.title2": "Selamat datang di pulau.",
+  "success.desc": "Lisensi Trisle Anda telah dikonfirmasi. Kami telah mengirimkan resi Anda dari Polar — itu berisi detail pesanan dan semua yang Anda butuhkan untuk memulai.",
+  "success.reference": "Referensi pesanan",
+  "success.next": "Apa yang terjadi selanjutnya",
+  "success.step1.title": "Periksa kotak masuk Anda",
+  "success.step1.desc": "Resi Anda akan tiba melalui email dari Polar. Jika pesanan Anda mencakup kunci lisensi, ia ada di email yang sama — berikan beberapa menit, dan perik folder spam jika tidak terlihat.",
+  "success.step2.title": "Instal & atur",
+  "success.step2.desc": "Instal Trisle di ponsel Android Anda, buka aplikasi dan ikuti panduan pengaturan untuk memberikan izin overlay. Anda akan siap digunakan dalam dua menit.",
+  "success.step3.title": "Butuh bantuan?",
+  "success.step3.desc": "Ada yang tidak jelas tentang pesanan atau pengaturan Anda? Balas email resi Anda — itu langsung mencapai kami — atau jelajahi FAQ di halaman utama.",
+  "success.cta.home": "Kembali ke halaman utama",
+  "success.cta.faq": "Baca FAQ",
+  "success.note": "Halaman ini adalah bukti pembelian Anda — Anda bisa menutupnya sekarang. Berubah pikiran? Setiap pesanan tercakup oleh kebijakan pengembalian uang 7 hari tanpa pertanyaan kami."
 }

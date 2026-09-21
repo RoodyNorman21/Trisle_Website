@@ -198,5 +198,20 @@
   "island.nav.collapse": "접기",
   "island.nav.open": "지도 열기",
   "island.timer.label": "타이머",
-  "island.call.status": "연결됨 • 04:18"
+  "island.call.status": "연결됨 • 04:18",
+  "success.metaTitle": "구매 완료 — Trisle",
+  "success.title1": "환영합니다.",
+  "success.title2": "섬에 오신 것을 환영합니다.",
+  "success.desc": "Trisle 라이선스가 확인되었습니다. Polar에서 발송한 영수증 이메일이 도착했습니다. 주문 내역과 시작하기에 필요한 모든 정보가 포함되어 있습니다.",
+  "success.reference": "주문 참조 번호",
+  "success.next": "다음 단계",
+  "success.step1.title": "받은 편지함 확인",
+  "success.step1.desc": "영수증 이메일이 Polar에서 발송됩니다. 주문에 라이선스 키가 포함된 경우 동일한 이메일에 포함되어 있습니다. 잠시 기다리거나 스팸함에 있는지 확인해 보세요.",
+  "success.step2.title": "설치 및 설정",
+  "success.step2.desc": "Trisle을 Android 폰에 설치하고 앱을 열어 오버레이 권한을 부여하는 설정 가이드를 따르세요. 2분 안에 바로 사용할 수 있습니다.",
+  "success.step3.title": "도움이 필요하신가요?",
+  "success.step3.desc": "주문이나 설정에 대해 궁금한 점이 있으신가요? 영수증 이메일로 회신해 주시거나 홈페이지의 FAQ를 확인해 보세요.",
+  "success.cta.home": "홈페이지로 돌아가기",
+  "success.cta.faq": "FAQ 읽기",
+  "success.note": "이 페이지는 구매 증빙입니다. 지금 닫으셔도 됩니다. 마음이 바뀌셨나요? 모든 주문은 7일 내 무조건 환불 정책으로 보장됩니다."
 }

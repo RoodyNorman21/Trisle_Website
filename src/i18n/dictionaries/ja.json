@@ -198,5 +198,20 @@
   "island.nav.collapse": "折りたたむ",
   "island.nav.open": "マップを開く",
   "island.timer.label": "タイマー",
-  "island.call.status": "通話中 • 04:18"
+  "island.call.status": "通話中 • 04:18",
+  "success.metaTitle": "購入完了 — Trisle",
+  "success.title1": "ご登録完了。",
+  "success.title2": "アイランドへようこそ。",
+  "success.desc": "お客様のTrisleライセンスが確認されました。Polarから送付されたメールに領収書が添付されており、注文の詳細と始めるために必要なすべてが含まれています。",
+  "success.reference": "注文番号",
+  "success.next": "今後の流れ",
+  "success.step1.title": "受信トレイを確認",
+  "success.step1.desc": "領収書はPolarからメールで届きます。注文にライセンスキーが含まれている場合は、同じメールに記載されています。少し時間を置いて、スパムフォルダに振り分けられていないか確認してください。",
+  "success.step2.title": "インストール＆セットアップ",
+  "success.step2.desc": "AndroidスマートフォンにTrisleをインストールし、アプリを開いてオーバーレイ権限を許可するセットアップガイドに従ってください。2分で準備完了です。",
+  "success.step3.title": "ご不明な点は？",
+  "success.step3.desc": "注文やセットアップについて不明な点があれば、領収書のメールに返信してください（直接当方に届きます）、またはホームページのFAQをご覧ください。",
+  "success.cta.home": "ホームページに戻る",
+  "success.cta.faq": "FAQを読む",
+  "success.note": "このページはお客様の購入証明です。今すぐ閉じても構いません。気に入らなかった場合は、すべての注文に7日間の無条件返金保証が適用されます。"
 }

@@ -198,5 +198,20 @@
   "island.nav.collapse": "Minimieren",
   "island.nav.open": "Karten öffnen",
   "island.timer.label": "Timer",
-  "island.call.status": "Verbunden • 04:18"
+  "island.call.status": "Verbunden • 04:18",
+  "success.metaTitle": "Kauf abgeschlossen — Trisle",
+  "success.title1": "Du bist dabei.",
+  "success.title2": "Willkommen auf der Insel.",
+  "success.desc": "Deine Trisle-Lizenz ist bestätigt. Wir haben dir deine Quittung von Polar per E-Mail geschickt – sie enthält alle Bestelldetails und alles, was du zum Loslegen brauchst.",
+  "success.reference": "Bestellreferenz",
+  "success.next": "Was passiert als Nächstes",
+  "success.step1.title": "Prüfe deinen Posteingang",
+  "success.step1.desc": "Deine Quittung kommt per E-Mail von Polar. Wenn deine Bestellung einen Lizenzschlüssel enthält, findest du ihn in derselben E-Mail – warte einen Moment und schau auch im Spam nach, falls er sich versteckt.",
+  "success.step2.title": "Installieren & einrichten",
+  "success.step2.desc": "Installiere Trisle auf deinem Android-Telefon, öffne die App und folge dem Einrichtungsleitfaden, um die Overlay-Berechtigung zu erteilen. In zwei Minuten bist du startklar.",
+  "success.step3.title": "Brauchst du Hilfe?",
+  "success.step3.desc": "Irgendwas unklar an deiner Bestellung oder Einrichtung? Antworte einfach auf deine Quittungs-E-Mail – sie erreicht uns direkt – oder durchstöbere die FAQ auf der Startseite.",
+  "success.cta.home": "Zurück zur Startseite",
+  "success.cta.faq": "FAQ lesen",
+  "success.note": "Diese Seite ist dein Kaufnachweis – du kannst sie jetzt schließen. Dir es anders überlegt? Jede Bestellung ist durch unsere 7-tägige, fragenlose Rückerstattungsrichtlinie abgedeckt."
 }

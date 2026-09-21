@@ -198,5 +198,20 @@
   "island.nav.collapse": "Daralt",
   "island.nav.open": "Haritaları Aç",
   "island.timer.label": "Zamanlayıcı",
-  "island.call.status": "Bağlı • 04:18"
+  "island.call.status": "Bağlı • 04:18",
+  "success.metaTitle": "Satın alma tamamlandı — Trisle",
+  "success.title1": "İçeri girdiniz.",
+  "success.title2": "Adaya hoş geldiniz.",
+  "success.desc": "Trisle lisansınız onaylandı. Polar'dan gelen e-posta ile makbuzunuz gönderildi — sipariş detaylarınız ve başlamak için gereken her şey orada.",
+  "success.reference": "Sipariş referansı",
+  "success.next": "Şimdi ne olacak",
+  "success.step1.title": "Gelen kutunuzu kontrol edin",
+  "success.step1.desc": "Makbuzunuz Polar'dan e-posta ile gelecek. Siparişinizde lisans anahtarı varsa, aynı e-postada bulunur — bir dakika bekleyin ve spam klasöründe değilse orada arayın.",
+  "success.step2.title": "Kurulum ve ayarlama",
+  "success.step2.desc": "Trisle'ı Android telefonunuza kurun, uygulamayı açın ve katman izni vermek için kurulum kılavuzunu izleyin. İki dakika içinde çalışmaya başlayacaksınız.",
+  "success.step3.title": "Yardıma mı ihtiyacınız var?",
+  "success.step3.desc": "Siparişiniz veya kurulumunuzla ilgili belirsizlikler mi var? Makbuz e-postanıza yanıt verin — doğrudan bize ulaşır — veya ana sayfadaki SSS bölümüne göz atın.",
+  "success.cta.home": "Ana sayfaya geri dön",
+  "success.cta.faq": "SSS'yi oku",
+  "success.note": "Bu sayfa satın alma kanıtınızdır — şimdi kapatabilirsiniz. Fikriniz mi değişti? Her sipariş, 7 günlük, sormadan para iade politikamızla kapsanmaktadır."
 }

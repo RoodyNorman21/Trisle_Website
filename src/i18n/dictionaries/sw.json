@@ -198,5 +198,20 @@
   "island.nav.collapse": "Kunja",
   "island.nav.open": "Fungua Ramani",
   "island.timer.label": "Kisaa cha muda",
-  "island.call.status": "Imeunganishwa • 04:18"
+  "island.call.status": "Imeunganishwa • 04:18",
+  "success.metaTitle": "Malipo yamekamilika — Trisle",
+  "success.title1": "Umeingia.",
+  "success.title2": "Karibu kwenye kisiwa.",
+  "success.desc": "Leseni yako ya Trisle imethibitishwa. Tumepeleka risiti yako ya barua pepe kutoka Polar — ina maelezo ya agizo na unahitaji yote kuanza.",
+  "success.reference": "Tathmini ya agizo",
+  "success.next": "Kitakachofuata",
+  "success.step1.title": "Angalia inbox yako",
+  "success.step1.desc": "Risiti yako inafika kwa barua pepe kutoka Polar. Ikiwa agizo lako lina funguo leseni, zipo kwenye barua pepe hiyo — subiri dakika moja, na angalia katika spam ikiwa inaficha.",
+  "success.step2.title": "Usakinishi & uweke",
+  "success.step2.desc": "Usakinishi Trisle kwenye simu yako ya Android, fungua programu na fuata mwongozo wa usanidi kuipa ruhusa ya overlay. Utafanya kazi dakika mbili.",
+  "success.step3.title": "Unahitaji msaada?",
+  "success.step3.desc": "Kuna kitu kisichosema kuhusu agizo au usanidi wako? Jibu barua pepe ya risiti yako — inafikia moja kwa moja — au somo FAQ kwenye ukurasa wa nyuma.",
+  "success.cta.home": "Rudi kwenye ukurasa wa mwanzo",
+  "success.cta.faq": "Soma FAQ",
+  "success.note": "Ukurasa huu ni ushahidi wa ununuzi wako — unaweza kufunga sasa. Ubadilisha mawazo? Kila agizo unaungwa na sera yetu ya kurudisha pesa bila hoja kwa siku 7."
 }

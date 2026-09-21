@@ -222,5 +222,21 @@
   "island.nav.collapse": "Collapse",
   "island.nav.open": "Open Maps",
   "island.timer.label": "Timer",
-  "island.call.status": "Connected • 04:18"
+  "island.call.status": "Connected • 04:18",
+
+  "success.metaTitle": "Purchase complete — Trisle",
+  "success.title1": "You're in.",
+  "success.title2": "Welcome to the island.",
+  "success.desc": "Your Trisle license is confirmed. We've emailed your receipt from Polar — it has your order details and everything you need to get started.",
+  "success.reference": "Order reference",
+  "success.next": "What happens next",
+  "success.step1.title": "Check your inbox",
+  "success.step1.desc": "Your receipt arrives by email from Polar. If your order includes a license key, it's in the same email — give it a minute, and peek in spam if it's hiding.",
+  "success.step2.title": "Install & set up",
+  "success.step2.desc": "Install Trisle on your Android phone, open the app and follow the setup guide to grant the overlay permission. You'll be up and running in two minutes.",
+  "success.step3.title": "Need a hand?",
+  "success.step3.desc": "Anything unclear about your order or setup? Reply to your receipt email — it reaches us directly — or browse the FAQ on the homepage.",
+  "success.cta.home": "Back to homepage",
+  "success.cta.faq": "Read the FAQ",
+  "success.note": "This page is your proof of purchase — you can close it now. Changed your mind? Every order is covered by our 7-day, no-questions-asked refund policy."
 }

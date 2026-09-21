@@ -120,7 +120,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     html.dir = dir;
 
     const apply = () => {
-      const title = translate(locale, "meta.title");
+      // Pages can override the tab title key via <meta name="i18n-title" content="key" />
+      const keyEl = document.querySelector('meta[name="i18n-title"]');
+      const key = keyEl?.getAttribute("content") || "meta.title";
+      const title = translate(locale, key);
       if (title && document.title !== title) document.title = title;
     };
     apply();

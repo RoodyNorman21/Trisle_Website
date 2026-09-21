@@ -198,5 +198,20 @@
   "island.nav.collapse": "Colapsar",
   "island.nav.open": "Abrir Maps",
   "island.timer.label": "Temporizador",
-  "island.call.status": "Conectado • 04:18"
+  "island.call.status": "Conectado • 04:18",
+  "success.metaTitle": "Compra completada — Trisle",
+  "success.title1": "Ya estás dentro.",
+  "success.title2": "Bienvenido a la isla.",
+  "success.desc": "Tu licencia de Trisle está confirmada. Hemos enviado tu recibo desde Polar — contiene los detalles de tu pedido y todo lo que necesitas para empezar.",
+  "success.reference": "Referencia del pedido",
+  "success.next": "Qué pasa ahora",
+  "success.step1.title": "Revisa tu bandeja de entrada",
+  "success.step1.desc": "Tu recibo llega por email desde Polar. Si tu pedido incluye una clave de licencia, está en el mismo email — dale un minuto y revisa el spam si no lo encuentras.",
+  "success.step2.title": "Instala y configura",
+  "success.step2.desc": "Instala Trisle en tu teléfono Android, abre la aplicación y sigue la guía de configuración para otorgar el permiso de superposición. Estará funcionando en dos minutos.",
+  "success.step3.title": "¿Necesitas ayuda?",
+  "success.step3.desc": "¿Algo no está claro sobre tu pedido o configuración? Responde a tu email de recibo — nos llega directamente — o consulta las Preguntas Frecuentes en la página de inicio.",
+  "success.cta.home": "Volver a la página de inicio",
+  "success.cta.faq": "Leer las Preguntas Frecuentes",
+  "success.note": "Esta página es tu comprobante de compra — puedes cerrarla ahora. ¿Cambiaste de opinión? Cada pedido está cubierto por nuestra política de reembolso de 7 días sin preguntas."
 }

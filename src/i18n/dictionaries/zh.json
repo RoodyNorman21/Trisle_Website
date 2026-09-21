@@ -198,5 +198,20 @@
   "island.nav.collapse": "收起",
   "island.nav.open": "打开地图",
   "island.timer.label": "计时器",
-  "island.call.status": "已连接 • 04:18"
+  "island.call.status": "已连接 • 04:18",
+  "success.metaTitle": "购买完成 — Trisle",
+  "success.title1": "您已加入。",
+  "success.title2": "欢迎来到岛屿。",
+  "success.desc": "您的 Trisle 许可已确认。我们已从 Polar 向您发送收据邮件，其中包含您的订单详情和开始所需的一切信息。",
+  "success.reference": "订单参考号",
+  "success.next": "接下来会发生什么",
+  "success.step1.title": "检查您的收件箱",
+  "success.step1.desc": "您的收据来自 Polar 的电子邮件。如果您的订单包含许可证密钥，它也在同一封邮件中——请稍等一分钟，如果找不到请检查垃圾邮件。",
+  "success.step2.title": "安装与设置",
+  "success.step2.desc": "在您的 Android 手机上安装 Trisle，打开应用并按照设置指南授予叠加层权限。您将在两分钟内开始使用。",
+  "success.step3.title": "需要帮助？",
+  "success.step3.desc": "对您的订单或设置有任何疑问吗？回复您的收据邮件——它会直接送达我们——或浏览主页上的常见问题解答。",
+  "success.cta.home": "返回主页",
+  "success.cta.faq": "阅读常见问题解答",
+  "success.note": "此页面是您的购买凭证——您现在可以关闭它。改变主意了吗？每个订单都享受我们7天无理由退款政策。"
 }
