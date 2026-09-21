@@ -13,28 +13,28 @@ const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SLIDES = [
   {
     num: "01",
-    src: `${BASE}/screenshots/app-position.png`,
+    src: `${BASE}/screenshots/app-position.webp`,
     tabKey: "screenshots.s1.tab",
     titleKey: "screenshots.s1.title",
     descKey: "screenshots.s1.desc",
   },
   {
     num: "02",
-    src: `${BASE}/screenshots/app-apps.png`,
+    src: `${BASE}/screenshots/app-apps.webp`,
     tabKey: "screenshots.s2.tab",
     titleKey: "screenshots.s2.title",
     descKey: "screenshots.s2.desc",
   },
   {
     num: "03",
-    src: `${BASE}/screenshots/app-appearance.png`,
+    src: `${BASE}/screenshots/app-appearance.webp`,
     tabKey: "screenshots.s3.tab",
     titleKey: "screenshots.s3.title",
     descKey: "screenshots.s3.desc",
   },
   {
     num: "04",
-    src: `${BASE}/screenshots/app-alerts.png`,
+    src: `${BASE}/screenshots/app-alerts.webp`,
     tabKey: "screenshots.s4.tab",
     titleKey: "screenshots.s4.title",
     descKey: "screenshots.s4.desc",
@@ -201,8 +201,8 @@ export function Screenshots() {
                         <Image
                           src={slide.src}
                           alt={t(slide.titleKey)}
-                          width={720}
-                          height={1560}
+                          width={468}
+                          height={1040}
                           priority={i === 0}
                           draggable={false}
                           className="h-[400px] w-auto rounded-[2.1rem] sm:h-[460px] lg:h-[520px]"

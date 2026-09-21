@@ -43,6 +43,15 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@theme {
+  /* WCAG AA on near-black backgrounds: Tailwind's zinc-500 (#71717b) is 4.22:1
+     and zinc-600 (#52525b) is 2.63:1 on #050506. These overrides raise every
+     small-text usage site-wide to >=4.5:1 (#767681 = 4.54:1, #8c8c96 = 6.1:1)
+     without touching component code. */
+  --color-zinc-500: #767681;
+  --color-zinc-600: #8c8c96;
+}
+
 :root {
   /* Trisle — dark-only monochrome design system */
   --radius: 0.75rem;

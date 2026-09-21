@@ -103,7 +103,7 @@ export function Hero({ onBuy }: { onBuy: () => void }) {
           <PhoneFrame
             video={{
               src: `${base}/videos/trisle-demo.mp4`,
-              poster: `${base}/videos/trisle-demo-poster.jpg`,
+              poster: `${base}/videos/trisle-demo-poster.webp`,
               label: t("hero.videoBadge"),
             }}
           />

@@ -104,7 +104,7 @@ export function Comparison() {
                 {ROWS.map((key) => (
                   <li
                     key={key}
-                    className="flex items-start gap-3 text-[13.5px] text-zinc-500"
+                    className="flex items-start gap-3 text-[13.5px] text-zinc-400"
                   >
                     <span
                       role="img"

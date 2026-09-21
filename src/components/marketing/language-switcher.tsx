@@ -17,7 +17,9 @@ export function LanguageSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        aria-label={t("nav.language")}
+        // Label-in-Name: the accessible name must contain the visible text
+        // ("EN"), so the current locale code is appended to the localized verb.
+        aria-label={`${t("nav.language")} — ${current.code.toUpperCase()}`}
         className="inline-flex h-9 items-center gap-1.5 rounded-full border border-white/15 px-3 text-[12px] font-semibold text-zinc-300 transition-colors hover:border-white/30 hover:text-white focus:outline-none"
       >
         <Globe className="h-3.5 w-3.5" />

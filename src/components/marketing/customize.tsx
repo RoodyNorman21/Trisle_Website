@@ -138,9 +138,9 @@ export function Customize() {
                   <p.icon className="h-4 w-4 text-zinc-200" />
                 </div>
                 <div>
-                  <h4 className="text-[14px] font-semibold text-white">
+                  <h3 className="text-[14px] font-semibold text-white">
                     {t(p.titleKey)}
-                  </h4>
+                  </h3>
                   <p className="mt-1 text-[12.5px] leading-relaxed text-zinc-500">
                     {t(p.descKey)}
                   </p>
