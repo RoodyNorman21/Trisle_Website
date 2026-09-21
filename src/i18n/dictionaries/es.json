@@ -235,5 +235,17 @@
   "proof.3": "Un pago — para siempre tuyo",
   "proof.4": "100% en el dispositivo. Cero seguimiento.",
   "proof.5": "Los pagos están garantizados por Polar",
-  "proof.6": "Configuración en menos de dos minutos"
+  "proof.6": "Configuración en menos de dos minutos",
+  "compare.label": "¿Por qué pagar?",
+  "compare.title1": "Los clones gratuitos existen.",
+  "compare.title2": " Esta es la diferencia.",
+  "compare.desc": "La Play Store está llena de apps de «Dynamic Island» — la mayoría son cáscaras sostenidas por anuncios. Así se compara Trisle con un clon gratuito típico.",
+  "compare.trisle": "Trisle",
+  "compare.free": "Clon gratuito típico",
+  "compare.r1": "Sin anuncios ni SDKs de rastreo",
+  "compare.r2": "5,99 € una vez — nunca una suscripción",
+  "compare.r3": "Live Activities reales: música, mapas, llamadas y temporizadores",
+  "compare.r4": "Morphs con física de muelles y Triple Island",
+  "compare.yes": "Incluido con Trisle",
+  "compare.no": "No incluido"
 }

@@ -235,5 +235,17 @@
   "proof.3": "一次付费，永久拥有",
   "proof.4": "100% 本地处理。零追踪。",
   "proof.5": "由 Polar 保障支付安全",
-  "proof.6": "两分钟内完成设置"
+  "proof.6": "两分钟内完成设置",
+  "compare.label": "为什么要付费？",
+  "compare.title1": "免费的仿制品很多。",
+  "compare.title2": " 差别在这里。",
+  "compare.desc": "应用商店里不乏「灵动岛」应用，但大多数只是靠广告撑着的空壳。把 Trisle 和典型的免费仿品比一比，差别一目了然。",
+  "compare.trisle": "Trisle",
+  "compare.free": "典型的免费仿品",
+  "compare.r1": "无广告、无追踪 SDK",
+  "compare.r2": "5.99 欧元买断 — 绝无订阅",
+  "compare.r3": "真正的实时活动：音乐、地图、通话、计时器",
+  "compare.r4": "弹簧物理形变动画与三重岛",
+  "compare.yes": "Trisle 包含",
+  "compare.no": "不包含"
 }

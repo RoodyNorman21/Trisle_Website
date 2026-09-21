@@ -235,5 +235,17 @@
   "proof.3": "한 번의 결제 — 평생 당신 것",
   "proof.4": "100% 온디바이스. 추적 없음.",
   "proof.5": "Polar로 안전하게 결제",
-  "proof.6": "2분 안에 설정 완료"
+  "proof.6": "2분 안에 설정 완료",
+  "compare.label": "왜 유료인가요?",
+  "compare.title1": "무료 클론도 있습니다.",
+  "compare.title2": " 하지만 차이가 여기 있습니다.",
+  "compare.desc": "Play 스토어에는 ‘다이내믹 아일랜드’ 앱이 넘쳐나지만, 대부분은 광고로 버티는 껍데기입니다. 일반적인 무료 클론과 Trisle을 비교해 보세요.",
+  "compare.trisle": "Trisle",
+  "compare.free": "일반적인 무료 클론",
+  "compare.r1": "광고·추적 SDK 없음",
+  "compare.r2": "5.99유로 일회성 — 구독 없음",
+  "compare.r3": "진짜 라이브 활동: 음악, 지도, 통화, 타이머",
+  "compare.r4": "스프링 물리 모프와 트리플 아일랜드",
+  "compare.yes": "Trisle에 포함",
+  "compare.no": "미포함"
 }

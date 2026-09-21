@@ -43,6 +43,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  // Optional search-console ownership tags. Set the env vars at build time
+  // (GitHub Actions env or local shell) and the <meta> tags appear; unset,
+  // they are omitted entirely.
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_SITE_VERIFICATION || undefined,
+    other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? {
+          "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION,
+        }
+      : undefined,
+  },
+  manifest: "/manifest.webmanifest",
   openGraph: {
     title: "Trisle — The Dynamic Island for Android",
     description:

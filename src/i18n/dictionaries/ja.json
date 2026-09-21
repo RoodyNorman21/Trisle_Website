@@ -235,5 +235,17 @@
   "proof.3": "支払いは一度だけ — 永久にあなたのもの",
   "proof.4": "100% 端末内処理。追跡なし。",
   "proof.5": "決済は Polar が安全に処理",
-  "proof.6": "2 分以内でセットアップ完了"
+  "proof.6": "2 分以内でセットアップ完了",
+  "compare.label": "なぜ有料？",
+  "compare.title1": "無料のクローンもあります。",
+  "compare.title2": " 違いはここにあります。",
+  "compare.desc": "Play ストアには「Dynamic Island」アプリが大量にありますが、そのほとんどは広告頼みの中身のない殻です。典型的な無料クローンと Trisle を比べてみてください。",
+  "compare.trisle": "Trisle",
+  "compare.free": "典型的な無料クローン",
+  "compare.r1": "広告もトラッキング SDK も一切なし",
+  "compare.r2": "5.99 ユーロの買い切り — サブスクなし",
+  "compare.r3": "本物のライブアクティビティ：音楽・マップ・通話・タイマー",
+  "compare.r4": "スプリング物理のモーフと Triple Island",
+  "compare.yes": "Trisle に含まれる",
+  "compare.no": "含まれない"
 }

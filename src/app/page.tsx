@@ -2,6 +2,7 @@
 
 import { ActivitiesShowcase } from "@/components/marketing/activities-showcase";
 import { AlertMarquee } from "@/components/marketing/alert-marquee";
+import { Comparison } from "@/components/marketing/comparison";
 import { Customize } from "@/components/marketing/customize";
 import { Faq } from "@/components/marketing/faq";
 import { Features } from "@/components/marketing/features";
@@ -12,6 +13,7 @@ import { Navbar } from "@/components/marketing/navbar";
 import { Pricing } from "@/components/marketing/pricing";
 import { Screenshots } from "@/components/marketing/screenshots";
 import { SocialProof } from "@/components/marketing/social-proof";
+import { StickyBuyBar } from "@/components/marketing/sticky-buy-bar";
 
 function scrollToPricing() {
   document
@@ -36,11 +38,13 @@ export default function Home() {
         <HowItWorks />
         <Screenshots />
         <SocialProof />
+        <Comparison />
         <Pricing />
         <Faq />
       </main>
 
       <Footer />
+      <StickyBuyBar />
     </div>
   );
 }

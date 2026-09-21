@@ -235,5 +235,17 @@
   "proof.3": "Tek ödeme — sonsuza dek senin",
   "proof.4": "%100 cihazda. Sıfır izleme.",
   "proof.5": "Ödemeler Polar güvencesiyle",
-  "proof.6": "İki dakikadan kısa sürede kurulum"
+  "proof.6": "İki dakikadan kısa sürede kurulum",
+  "compare.label": "Neden ücretli?",
+  "compare.title1": "Ücretsiz klonlar var.",
+  "compare.title2": " Fark işte burada.",
+  "compare.desc": "Play Store, «Dynamic Island» uygulamalarıyla dolu — çoğu reklamlarla ayakta kalan boş kabuk. Trisle’nin tipik bir ücretsiz klonla farkına bakın.",
+  "compare.trisle": "Trisle",
+  "compare.free": "Tipik ücretsiz klon",
+  "compare.r1": "Reklamsız, izleme SDK’sı yok",
+  "compare.r2": "5,99 € bir kez — asla abonelik yok",
+  "compare.r3": "Gerçek Canlı Etkinlikler: müzik, haritalar, aramalar, zamanlayıcı",
+  "compare.r4": "Yay fiziği morphları ve Triple Island",
+  "compare.yes": "Trisle’de var",
+  "compare.no": "Yok"
 }
