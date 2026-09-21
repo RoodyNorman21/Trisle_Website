@@ -65,3 +65,7 @@ server.log
 /prisma/
 /Caddyfile
 .pages-sim/
+
+# test screenshots / visual artifacts
+scripts/*.png
+scripts/*.jpg
