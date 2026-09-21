@@ -68,4 +68,5 @@ server.log
 
 # test screenshots / visual artifacts
 scripts/*.png
+scripts/**/*.png
 scripts/*.jpg
