@@ -42,13 +42,13 @@ function Row({ ariaHidden = false }: { ariaHidden?: boolean }) {
   );
 }
 
-/** Quiet trust ticker above the pricing section — drifts left → right, pauses on hover. */
+/** Quiet trust ticker above the pricing section — always drifts left → right. */
 export function SocialProof() {
   const { t } = useI18n();
   return (
     <section
       aria-label={t("proof.aria")}
-      className="group relative overflow-hidden border-t border-white/[0.06] py-4"
+      className="relative overflow-hidden border-t border-white/[0.06] py-4"
     >
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-28 bg-gradient-to-r from-black to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-28 bg-gradient-to-l from-black to-transparent" />
@@ -57,7 +57,7 @@ export function SocialProof() {
           seamless in RTL pages; each Row restores the page direction internally. */}
       <div dir="ltr" className="overflow-hidden">
         <div
-          className="animate-marquee-reverse group-hover:[animation-play-state:paused] flex w-max items-center"
+          className="animate-marquee-reverse flex w-max items-center"
         >
           <Row />
           <Row ariaHidden />

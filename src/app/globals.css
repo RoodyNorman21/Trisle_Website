@@ -178,13 +178,13 @@
   to { transform: translateX(-50%); }
 }
 
+/* Both marquees drift left → right (reverse plays the -50%→0 half-loop) */
 .animate-marquee {
-  animation: marquee-x 36s linear infinite;
+  animation: marquee-x 36s linear infinite reverse;
 }
 
-/* Reverse marquee — drifts left → right (social proof ticker) */
 .animate-marquee-reverse {
-  animation: marquee-x 48s linear infinite reverse;
+  animation: marquee-x 40s linear infinite reverse;
 }
 
 @media (prefers-reduced-motion: reduce) {
