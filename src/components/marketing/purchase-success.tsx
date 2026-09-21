@@ -3,7 +3,15 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, Download, LifeBuoy, Mail } from "lucide-react";
+import {
+  ArrowRight,
+  Download,
+  KeyRound,
+  LifeBuoy,
+  Mail,
+  RefreshCw,
+  ShieldCheck,
+} from "lucide-react";
 import { useI18n } from "@/i18n/context";
 import { LanguageSwitcher } from "./language-switcher";
 
@@ -15,14 +23,27 @@ const STEPS = [
 
 const EASE = [0.21, 0.47, 0.32, 0.98] as const;
 
+// Public license proxy (same worker the Android app talks to).
+// The Polar token lives server-side; this page only ever sends the
+// buyer's license key and receives a short-lived signed download link.
+const WORKER_URL = "https://trisle.foldfx-contact.workers.dev";
+
+type Phase = "locked" | "checking" | "unlocked";
+
 export function PurchaseSuccess() {
   const { t } = useI18n();
   const reduce = useReducedMotion();
+  const [phase, setPhase] = useState<Phase>("locked");
+  const [keyInput, setKeyInput] = useState("");
+  const [errorKey, setErrorKey] = useState<string | null>(null);
+  const [signedUrl, setSignedUrl] = useState<string | null>(null);
+  const [refreshing, setRefreshing] = useState(false);
   const [reference, setReference] = useState<string | null>(null);
 
-  // Polar redirects here from the hosted checkout. When the Success URL
-  // contains the {CHECKOUT_ID} placeholder it arrives as ?checkout_id=…;
-  // otherwise we simply show the page without a reference chip.
+  // Polar redirects here from the hosted checkout with ?checkout_id=…
+  // It is cosmetic only (an order reference chip) — it never unlocks
+  // anything. The download gate is the license key, which Polar only
+  // issues after a successful payment.
   useEffect(() => {
     try {
       const params = new URLSearchParams(window.location.search);
@@ -30,12 +51,50 @@ export function PurchaseSuccess() {
         params.get("checkout_id") ||
         params.get("checkoutId") ||
         params.get("order_id");
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional post-mount hydration: query string only exists in the browser, reading it during render would break SSR
       if (id) setReference(id.slice(0, 24));
     } catch {
       /* no query string — skip the reference chip */
     }
   }, []);
+
+  async function requestLink(key: string) {
+    const res = await fetch(`${WORKER_URL}/download`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ key }),
+    });
+    if (res.ok) {
+      const data = (await res.json()) as { ok?: boolean; url?: string };
+      if (data.ok && data.url) {
+        setSignedUrl(data.url);
+        setPhase("unlocked");
+        setErrorKey(null);
+        return;
+      }
+    }
+    if (res.status === 403) setErrorKey("success.error.invalid");
+    else if (res.status === 429) setErrorKey("success.error.ratelimit");
+    else setErrorKey("success.error.network");
+  }
+
+  function submit() {
+    const key = keyInput.trim();
+    if (!key || phase === "checking") return;
+    setPhase("checking");
+    setErrorKey(null);
+    // On success requestLink flips phase to "unlocked"; on failure it sets
+    // errorKey and the effect below returns to the locked input.
+    requestLink(key).catch(() => {
+      setErrorKey("success.error.network");
+    });
+  }
+
+  // If an error appeared while checking, go back to the locked input.
+  useEffect(() => {
+    if (errorKey && phase === "checking") setPhase("locked");
+  }, [errorKey, phase]);
+
+  const unlocked = phase === "unlocked" && signedUrl;
 
   return (
     <div
@@ -70,149 +129,282 @@ export function PurchaseSuccess() {
 
       {/* Main */}
       <main className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 py-14 text-center">
-        {/* Island-style confirmation */}
-        <motion.div
-          initial={reduce ? false : { scale: 0.4, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 220, damping: 17, delay: 0.1 }}
-          className="relative"
-        >
-          {!reduce && (
-            <>
-              <motion.span
-                aria-hidden
-                className="absolute inset-0 rounded-full ring-1 ring-white/25"
-                initial={{ scale: 1, opacity: 0.6 }}
-                animate={{ scale: 1.9, opacity: 0 }}
-                transition={{ duration: 2, ease: "easeOut", repeat: Infinity, delay: 0.7 }}
-              />
-              <motion.span
-                aria-hidden
-                className="absolute inset-0 rounded-full ring-1 ring-white/15"
-                initial={{ scale: 1, opacity: 0.4 }}
-                animate={{ scale: 2.4, opacity: 0 }}
-                transition={{ duration: 2.6, ease: "easeOut", repeat: Infinity, delay: 1.2 }}
-              />
-            </>
-          )}
-          <div className="relative flex h-20 w-20 items-center justify-center rounded-full bg-zinc-900 shadow-[0_0_60px_-12px_oklch(1_0_0/35%)] ring-1 ring-white/10">
-            <svg viewBox="0 0 24 24" className="h-9 w-9" fill="none" aria-hidden>
-              <motion.path
-                d="M6.5 12.5l3.5 3.5 7.5-8"
-                stroke="white"
-                strokeWidth={2.4}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                initial={reduce ? { pathLength: 1 } : { pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                transition={{ delay: 0.45, duration: 0.55, ease: "easeOut" }}
-              />
-            </svg>
-          </div>
-        </motion.div>
-
-        {/* Heading */}
-        <motion.h1
-          initial={reduce ? false : { opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3, ease: EASE }}
-          className="mt-8 text-4xl font-black tracking-tight text-white sm:text-5xl"
-        >
-          {t("success.title1")}
-          <br />
-          <span className="text-zinc-500">{t("success.title2")}</span>
-        </motion.h1>
-
-        <motion.p
-          initial={reduce ? false : { opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4, ease: EASE }}
-          className="mt-5 max-w-md text-base leading-relaxed text-zinc-400"
-        >
-          {t("success.desc")}
-        </motion.p>
-
-        {/* Order reference (only when Polar passes it) */}
-        {reference && (
+        {!unlocked ? (
+          /* ---------------- LOCKED: license-key gate ---------------- */
           <motion.div
-            initial={reduce ? false : { opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, delay: 0.55 }}
-            className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-4 py-1.5 text-xs text-zinc-400"
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: EASE }}
+            className="w-full max-w-md"
           >
-            <span>{t("success.reference")}</span>
-            <code className="font-mono text-[11px] tracking-tight text-zinc-300">
-              {reference}…
-            </code>
-          </motion.div>
-        )}
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-zinc-900 ring-1 ring-white/10">
+              <KeyRound className="h-8 w-8 text-zinc-200" aria-hidden />
+            </div>
 
-        {/* Next steps */}
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5, ease: EASE }}
-          className="mt-10 w-full max-w-xl"
-        >
-          <p className="mb-4 text-center text-[11px] font-bold tracking-[0.18em] text-zinc-600 uppercase">
-            {t("success.next")}
-          </p>
-          <ol className="space-y-3 text-start">
-            {STEPS.map(({ icon: Icon, key }, i) => (
-              <li
-                key={key}
-                className="flex items-start gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4 sm:p-5"
+            <h1 className="mt-8 text-3xl font-black tracking-tight text-white sm:text-4xl">
+              {t("success.locked.title")}
+            </h1>
+            <p className="mt-4 text-base leading-relaxed text-zinc-400">
+              {t("success.locked.desc")}
+            </p>
+
+            <form
+              className="mt-8 flex flex-col gap-3"
+              onSubmit={(e) => {
+                e.preventDefault();
+                submit();
+              }}
+            >
+              <input
+                type="text"
+                inputMode="text"
+                autoComplete="off"
+                autoCapitalize="off"
+                spellCheck={false}
+                disabled={phase === "checking"}
+                value={keyInput}
+                onChange={(e) => setKeyInput(e.target.value)}
+                placeholder={t("success.locked.placeholder")}
+                aria-label={t("success.locked.placeholder")}
+                className="h-12 w-full rounded-full border border-white/10 bg-white/[0.04] px-6 font-mono text-sm tracking-wide text-white placeholder:font-sans placeholder:text-zinc-600 focus:border-white/30 focus:outline-none disabled:opacity-50"
+              />
+              <button
+                type="submit"
+                disabled={phase === "checking" || !keyInput.trim()}
+                className="group/cta relative inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-7 text-sm font-bold text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
               >
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] ring-1 ring-white/10">
-                  <Icon className="h-4 w-4 text-zinc-200" />
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-sm font-bold text-white">
-                    {t(`success.${key}.title`)}
-                  </span>
-                  <span className="mt-1 block text-[13px] leading-relaxed text-zinc-500">
-                    {t(`success.${key}.desc`)}
-                  </span>
-                </span>
-                <span aria-hidden className="mt-1 font-mono text-[11px] text-zinc-700">
-                  0{i + 1}
-                </span>
-              </li>
-            ))}
-          </ol>
-        </motion.div>
+                {phase === "checking" ? (
+                  <>
+                    <RefreshCw className="h-4 w-4 animate-spin" aria-hidden />
+                    {t("success.locked.checking")}
+                  </>
+                ) : (
+                  <>
+                    <ShieldCheck className="h-4 w-4" aria-hidden />
+                    {t("success.locked.cta")}
+                  </>
+                )}
+              </button>
+            </form>
 
-        {/* CTAs */}
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6, ease: EASE }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-3"
-        >
-          <Link
-            href="/"
-            className="group/cta relative inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-7 text-sm font-bold text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
-          >
-            <span className="cta-sheen absolute inset-y-0 w-16 bg-black/10 blur-md" />
-            {t("success.cta.home")}
-            <ArrowRight className="rtl:rotate-180 h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
-          </Link>
-          <Link
-            href="/#faq"
-            className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] px-7 text-sm font-semibold text-zinc-200 transition-colors hover:bg-white/[0.08] hover:text-white"
-          >
-            {t("success.cta.faq")}
-          </Link>
-        </motion.div>
+            {errorKey && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="mt-4 text-[13px] leading-relaxed text-red-400"
+                role="alert"
+              >
+                {t(errorKey)}
+              </motion.p>
+            )}
 
-        <motion.p
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-8 max-w-md text-xs leading-relaxed text-zinc-600"
-        >
-          {t("success.note")}
-        </motion.p>
+            <p className="mt-6 text-xs leading-relaxed text-zinc-600">
+              {t("success.locked.hint")}
+            </p>
+            <p className="mt-2 text-xs leading-relaxed text-zinc-600">
+              {t("success.locked.nopay")}{" "}
+              <Link
+                href="/#pricing"
+                className="font-semibold text-zinc-400 underline underline-offset-4 transition-colors hover:text-white"
+              >
+                {t("success.locked.nopayLink")}
+              </Link>
+            </p>
+          </motion.div>
+        ) : (
+          /* ---------------- UNLOCKED: verified purchase ---------------- */
+          <>
+            {/* Island-style confirmation */}
+            <motion.div
+              initial={reduce ? false : { scale: 0.4, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 220, damping: 17, delay: 0.1 }}
+              className="relative"
+            >
+              {!reduce && (
+                <>
+                  <motion.span
+                    aria-hidden
+                    className="absolute inset-0 rounded-full ring-1 ring-white/25"
+                    initial={{ scale: 1, opacity: 0.6 }}
+                    animate={{ scale: 1.9, opacity: 0 }}
+                    transition={{ duration: 2, ease: "easeOut", repeat: Infinity, delay: 0.7 }}
+                  />
+                  <motion.span
+                    aria-hidden
+                    className="absolute inset-0 rounded-full ring-1 ring-white/15"
+                    initial={{ scale: 1, opacity: 0.4 }}
+                    animate={{ scale: 2.4, opacity: 0 }}
+                    transition={{ duration: 2.6, ease: "easeOut", repeat: Infinity, delay: 1.2 }}
+                  />
+                </>
+              )}
+              <div className="relative flex h-20 w-20 items-center justify-center rounded-full bg-zinc-900 shadow-[0_0_60px_-12px_oklch(1_0_0/35%)] ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" className="h-9 w-9" fill="none" aria-hidden>
+                  <motion.path
+                    d="M6.5 12.5l3.5 3.5 7.5-8"
+                    stroke="white"
+                    strokeWidth={2.4}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    initial={reduce ? { pathLength: 1 } : { pathLength: 0 }}
+                    animate={{ pathLength: 1 }}
+                    transition={{ delay: 0.45, duration: 0.55, ease: "easeOut" }}
+                  />
+                </svg>
+              </div>
+            </motion.div>
+
+            {/* Heading */}
+            <motion.h1
+              initial={reduce ? false : { opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3, ease: EASE }}
+              className="mt-8 text-4xl font-black tracking-tight text-white sm:text-5xl"
+            >
+              {t("success.title1")}
+              <br />
+              <span className="text-zinc-500">{t("success.title2")}</span>
+            </motion.h1>
+
+            <motion.p
+              initial={reduce ? false : { opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4, ease: EASE }}
+              className="mt-5 max-w-md text-base leading-relaxed text-zinc-400"
+            >
+              {t("success.desc")}
+            </motion.p>
+
+            {/* Order reference (only when Polar passes it) */}
+            {reference && (
+              <motion.div
+                initial={reduce ? false : { opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: 0.55 }}
+                className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-4 py-1.5 text-xs text-zinc-400"
+              >
+                <span>{t("success.reference")}</span>
+                <code className="font-mono text-[11px] tracking-tight text-zinc-300">
+                  {reference}…
+                </code>
+              </motion.div>
+            )}
+
+            {/* Gated download card */}
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5, ease: EASE }}
+              className="mt-9 w-full max-w-xl rounded-2xl border border-white/[0.08] bg-white/[0.03] p-5 sm:p-6"
+            >
+              <div className="flex flex-col items-center gap-4">
+                <a
+                  href={signedUrl ?? "#"}
+                  onClick={(e) => {
+                    if (!signedUrl) e.preventDefault();
+                  }}
+                  className="group/cta relative inline-flex w-full max-w-sm items-center justify-center gap-2.5 overflow-hidden rounded-full bg-white px-7 py-3.5 text-sm font-bold text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  <span className="cta-sheen absolute inset-y-0 w-16 bg-black/10 blur-md" />
+                  <Download className="h-4 w-4" aria-hidden />
+                  {t("success.unlocked.cta")}
+                </a>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    disabled={refreshing}
+                    onClick={() => {
+                      const key = keyInput.trim();
+                      if (!key || refreshing) return;
+                      setRefreshing(true);
+                      requestLink(key)
+                        .catch(() => undefined)
+                        .finally(() => setRefreshing(false));
+                    }}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-white/10 px-4 py-1.5 text-xs font-semibold text-zinc-300 transition-colors hover:bg-white/[0.08] hover:text-white disabled:opacity-50"
+                  >
+                    <RefreshCw
+                      className={`h-3 w-3 ${refreshing ? "animate-spin" : ""}`}
+                      aria-hidden
+                    />
+                    {t("success.unlocked.refresh")}
+                  </button>
+                </div>
+                <p className="max-w-md text-[11.5px] leading-relaxed text-zinc-600">
+                  {t("success.unlocked.expires")}
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Next steps */}
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6, ease: EASE }}
+              className="mt-10 w-full max-w-xl"
+            >
+              <p className="mb-4 text-center text-[11px] font-bold tracking-[0.18em] text-zinc-600 uppercase">
+                {t("success.next")}
+              </p>
+              <ol className="space-y-3 text-start">
+                {STEPS.map(({ icon: Icon, key }, i) => (
+                  <li
+                    key={key}
+                    className="flex items-start gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4 sm:p-5"
+                  >
+                    <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] ring-1 ring-white/10">
+                      <Icon className="h-4 w-4 text-zinc-200" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-sm font-bold text-white">
+                        {t(`success.${key}.title`)}
+                      </span>
+                      <span className="mt-1 block text-[13px] leading-relaxed text-zinc-500">
+                        {t(`success.${key}.desc`)}
+                      </span>
+                    </span>
+                    <span aria-hidden className="mt-1 font-mono text-[11px] text-zinc-700">
+                      0{i + 1}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </motion.div>
+
+            {/* CTAs */}
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7, ease: EASE }}
+              className="mt-10 flex flex-wrap items-center justify-center gap-3"
+            >
+              <Link
+                href="/"
+                className="group/cta relative inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-7 text-sm font-bold text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <span className="cta-sheen absolute inset-y-0 w-16 bg-black/10 blur-md" />
+                {t("success.cta.home")}
+                <ArrowRight className="rtl:rotate-180 h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+              </Link>
+              <Link
+                href="/#faq"
+                className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] px-7 text-sm font-semibold text-zinc-200 transition-colors hover:bg-white/[0.08] hover:text-white"
+              >
+                {t("success.cta.faq")}
+              </Link>
+            </motion.div>
+
+            <motion.p
+              initial={reduce ? false : { opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-8 max-w-md text-xs leading-relaxed text-zinc-600"
+            >
+              {t("success.note")}
+            </motion.p>
+          </>
+        )}
       </main>
     </div>
   );

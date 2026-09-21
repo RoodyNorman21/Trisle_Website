@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Download } from "lucide-react";
 import { openPolarCheckout } from "@/lib/polar";
 import { useI18n } from "@/i18n/context";
@@ -65,6 +66,12 @@ export function Footer() {
         <div className="mt-12 flex flex-col gap-3 border-t border-white/[0.06] pt-7 text-[11.5px] text-zinc-600 sm:flex-row sm:items-center sm:justify-between">
           <span>{t("footer.rights", { year: new Date().getFullYear() })}</span>
           <span>{t("footer.disclaimer")}</span>
+          <Link
+            href="/success"
+            className="inline-flex items-center gap-1.5 transition-colors hover:text-zinc-300"
+          >
+            {t("footer.retrieve")}
+          </Link>
           <span className="inline-flex items-center gap-1.5">
             {t("footer.payments")}
             <span className="font-semibold text-zinc-400">Polar.sh</span>
