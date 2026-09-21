@@ -51,7 +51,9 @@ export function PurchaseSuccess() {
         params.get("checkout_id") ||
         params.get("checkoutId") ||
         params.get("order_id");
-      if (id) setReference(id.slice(0, 24));
+      if (id)
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional post-mount read of window.location; reading during render would break the static prerender
+        setReference(id.slice(0, 24));
     } catch {
       /* no query string — skip the reference chip */
     }
@@ -65,7 +67,9 @@ export function PurchaseSuccess() {
     });
     if (res.ok) {
       const data = (await res.json()) as { ok?: boolean; url?: string };
-      if (data.ok && data.url) {
+      // Only accept https download links from the worker — defense in depth
+      // against a compromised/misconfigured proxy injecting javascript: URLs.
+      if (data.ok && data.url && data.url.startsWith("https://")) {
         setSignedUrl(data.url);
         setPhase("unlocked");
         setErrorKey(null);
@@ -75,6 +79,7 @@ export function PurchaseSuccess() {
     if (res.status === 403) setErrorKey("success.error.invalid");
     else if (res.status === 429) setErrorKey("success.error.ratelimit");
     else setErrorKey("success.error.network");
+    setPhase("locked");
   }
 
   function submit() {
@@ -88,11 +93,6 @@ export function PurchaseSuccess() {
       setErrorKey("success.error.network");
     });
   }
-
-  // If an error appeared while checking, go back to the locked input.
-  useEffect(() => {
-    if (errorKey && phase === "checking") setPhase("locked");
-  }, [errorKey, phase]);
 
   const unlocked = phase === "unlocked" && signedUrl;
 
@@ -301,6 +301,7 @@ export function PurchaseSuccess() {
               <div className="flex flex-col items-center gap-4">
                 <a
                   href={signedUrl ?? "#"}
+                  rel="noopener noreferrer"
                   onClick={(e) => {
                     if (!signedUrl) e.preventDefault();
                   }}
