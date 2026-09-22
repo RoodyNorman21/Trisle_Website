@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Trisle — The Dynamic Island for Android",
   description:
-    "iPhone-style Dynamic Island for Android. Real Live Activities, smart alerts and fluid spring animations — 100% on-device and private. €5.99 one-time purchase, no subscription.",
+    "The iPhone's Dynamic Island on your Android — music, timers, calls and navigation floating above every app. 100% on-device. €5.99 once, yours forever.",
   keywords: [
     "Trisle",
     "Dynamic Island",
@@ -94,7 +94,7 @@ export const viewport: Viewport = {
 /** FAQ rich-result markup, built from the English dictionary at build time. */
 function faqJsonLd() {
   const entries: { q: string; a: string }[] = [];
-  for (let i = 1; i <= 8; i++) {
+  for (let i = 1; i <= 9; i++) {
     const q = en[`faq.q${i}`];
     const a = en[`faq.a${i}`];
     if (q && a) entries.push({ q, a });

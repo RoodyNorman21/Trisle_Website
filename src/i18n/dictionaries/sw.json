@@ -1,6 +1,6 @@
 {
   "meta.title": "Trisle — Kisiwa cha Dynamic. Kwa Android.",
-  "meta.description": "Trisle huwaka juu ya yote kwenye simu yako — muziki, muda wa kuzingatia, simu za kuingia, maelekezo ya kubadilisha mwelekeo na kila tahadhari, iliyotengenezwa kwa fizikia ya spring ya kioevu. Pata moja. Yako milele.",
+  "meta.description": "Dynamic Island ya iPhone kwenye Android yako — muziki, kipindi wa wakati, simu na usafiri juu ya programu zote. 100% kwenye kifaa. €5.99 mara moja, mako wako wa milele.",
   "nav.features": "Vipengele",
   "nav.activities": "Shughuli za Moja kwa Moja",
   "nav.customize": "Bofya",
@@ -11,7 +11,7 @@
   "hero.badge": "Sasa na Triple Island ya mtindo wa iOS 27",
   "hero.title1": "Kisiwa cha Dynamic.",
   "hero.title2": "Kwa Android.",
-  "hero.desc": "Trisle huwaka juu ya yote kwenye simu yako — muziki, muda wa kuzingatia, simu za kuingia, maelekezo ya kubadilisha mwelekeo na kila tahadhari, iliyotengenezwa kwa fizikia ya spring ya kioevu. Pata moja. Yako milele.",
+  "hero.desc": "Muziki, kipindi cha wakati, simu na maelekeo yanayobadilika yanafunguka juu ya programu zote kwa fizikia ya kuruka — Dynamic Island ya iPhone, kwenye Android yako. Sanjia chini ya dakika moja. Ununuzi moja. Mako wako wa milele.",
   "hero.cta": "Pata Trisle — €5.99",
   "hero.explore": "Chunguza vipengele",
   "hero.check1": "Pata moja",
@@ -171,6 +171,8 @@
   "faq.a7": "Hapana. Trisle ni bidhaa huru inayojengwa kwa Android. Hakina uhusiano na, usaidizi wa, au uunganisho na Apple Inc. 'Dynamic Island' ni alama ya biashara ya Apple Inc., inayotajwa hapa tu kueleza mtindo wa mwingiliano Trisle linarekebisha.",
   "faq.q8": "Vipi vinavyohusu rudisho?",
   "faq.a8": "Rahisi — kama Trisle si kwa ajako, unapata rudisho kamili wakati wowote ndani ya siku 7 ya ununuzio wako. Maswali hakuna. Tuwasiliana na usaidizi na maelezo ya agizo lako na Polar.sh inahitaji kurudisha kwa njia yako ya malipo ya awali.",
+  "faq.q9": "Je, ninahitaji kufanya root simu yangu?",
+  "faq.a9": "Hapana. Trisle inasimama kama programu ya kawaida na inahitaji ruhusa mbili za kawaida za Android — kuonyesha juu ya programu nyingine, na upatikaji wa arifu za arifu. Zote hupewa kupitia mazungumzo ya mfumo wa Android yenyewe, mshinzi kwa mshinzi. Hakuna root, hakana faili za mfumo zilizobadilishwa, hakana vifaa maalum.",
   "footer.tagline": "Dynamic Island kwa Android — menginezi, kibinafsi na bila shaka monochrome.",
   "footer.cta": "Pata Trisle — €5.99",
   "footer.rights": "© {year} Trisle. Haki zote zimehifadhiwa.",
@@ -247,5 +249,6 @@
   "compare.r3": "Live Activities za kweli: muziki, ramani, simu, vipima muda",
   "compare.r4": "Morph zenye fizikia ya springi na Triple Island",
   "compare.yes": "Imejumlishwa katika Trisle",
-  "compare.no": "Haijajumlishwa"
+  "compare.no": "Haijajumlishwa",
+  "compare.concede": "Kweli kweli? Kopea bure inatosha ikiwa unataka tu kujaribu. Trisle kwa watu wanaotaka kufanya vizuri — laini, binafsi na inayohifadhiwa."
 }

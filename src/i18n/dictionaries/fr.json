@@ -1,6 +1,6 @@
 {
   "meta.title": "Trisle — L'île dynamique. Pour Android.",
-  "meta.description": "Trisle flotte au-dessus de tout sur votre téléphone — musique, minuteurs, appels, indications étape par étape et chaque notification, rendues avec une physique de ressort fluide. Un seul achat. À vous pour toujours.",
+  "meta.description": "L'Îlot Dynamique de l'iPhone sur votre Android — musique, minuteurs, appels et navigation au-dessus de chaque application. 100% sur l'appareil. €5.99 une fois, à vous pour toujours.",
   "nav.features": "Fonctionnalités",
   "nav.activities": "Activités en direct",
   "nav.customize": "Personnaliser",
@@ -11,7 +11,7 @@
   "hero.badge": "Maintenant avec Triple Island style iOS 27",
   "hero.title1": "L'île dynamique.",
   "hero.title2": "Pour Android.",
-  "hero.desc": "Trisle flotte au-dessus de tout sur votre téléphone — musique, minuteurs, appels, indications étape par étape et chaque notification, rendues avec une physique de ressort fluide. Un seul achat. À vous pour toujours.",
+  "hero.desc": "Musique, minuteurs, appels et indications de navigation flottent au-dessus de chaque application avec une physique de ressort fluide — l'Îlot Dynamique de l'iPhone, sur votre Android. Configuration en moins d'une minute. Un achat. À vous pour toujours.",
   "hero.cta": "Obtenir Trisle — €5.99",
   "hero.explore": "Explorer les fonctionnalités",
   "hero.check1": "Achat unique",
@@ -171,6 +171,8 @@
   "faq.a7": "Non. Trisle est un produit indépendant développé pour Android. Il n'est pas affilié, approuvé ou connecté à Apple Inc. 'Dynamic Island' est une marque commerciale d'Apple Inc., mentionnée ici uniquement pour décrire le style d'interaction que Trisle recrée.",
   "faq.q8": "Comment fonctionnent les remboursements ?",
   "faq.a8": "Facile — si Trisle n'est pas pour vous, vous obtenez un remboursement intégral à tout moment dans les 7 jours suivant votre achat. Sans questions. Contactez simplement le support avec les détails de votre commande et Polar.sh traite le remboursement sur votre méthode de paiement originale.",
+  "faq.q9": "Dois-je rooter mon téléphone ?",
+  "faq.a9": "Non. Trisle s'installe comme n'importe quelle autre application et demande deux autorisations Android standard — afficher par-dessus les autres applications, et accès aux notifications. Les deux sont accordées via les boîtes de dialogue système d'Android, d'un seul tapotement. Pas de root, pas de fichiers système modifiés, pas d'outils spéciaux.",
   "footer.tagline": "L'îlot dynamique pour Android — fluide, privé et sans apologies monochrome.",
   "footer.cta": "Obtenez Trisle — €5.99",
   "footer.rights": "© {year} Trisle. Tous droits réservés.",
@@ -247,5 +249,6 @@
   "compare.r3": "Vraies Live Activities : musique, cartes, appels, minuteurs",
   "compare.r4": "Morphs à physique de ressort & Triple Island",
   "compare.yes": "Inclus avec Trisle",
-  "compare.no": "Non inclus"
+  "compare.no": "Non inclus",
+  "compare.concede": "Sérieusement ? Un clone gratuit suffit si vous voulez juste goûter. Trisle est pour ceux qui veulent que ce soit bien fait — fluide, privé et maintenu."
 }

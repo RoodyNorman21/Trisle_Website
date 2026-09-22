@@ -1,6 +1,6 @@
 {
   "meta.title": "Trisle — 动态岛。为 Android 而生。",
-  "meta.description": "Trisle 悬浮在您手机界面的最上层 — 音乐、计时器、通话、导航及每一条通知，均以流畅的弹簧物理效果呈现。一次购买，永久拥有。",
+  "meta.description": "将 iPhone 的灵动岛带到您的 Android —— 音乐、计时器、通话和导航指引悬浮于所有应用之上。100% 本地处理。仅需 €5.99，一次购买，永久拥有。",
   "nav.features": "功能",
   "nav.activities": "实时活动",
   "nav.customize": "自定义",
@@ -11,7 +11,7 @@
   "hero.badge": "现已支持 iOS 27 风格的三岛功能",
   "hero.title1": "动态岛。",
   "hero.title2": "为 Android 而生。",
-  "hero.desc": "Trisle 悬浮在您手机界面的最上层 — 音乐、计时器、通话、导航及每一条通知，均以流畅的弹簧物理效果呈现。一次购买，永久拥有。",
+  "hero.desc": "音乐、计时器、通话和导航指引以流畅的弹簧物理效果悬浮于所有应用之上——将 iPhone 的灵动岛带到您的 Android。一分钟内完成设置。一次购买，永久拥有。",
   "hero.cta": "获取 Trisle — €5.99",
   "hero.explore": "探索功能",
   "hero.check1": "一次性购买",
@@ -171,6 +171,8 @@
   "faq.a7": "没有。Trisle 是为 Android 开发的独立产品。它与 Apple Inc. 无关联、未获其认可或与其无关。'Dynamic Island' 是 Apple Inc. 的商标，此处仅用于描述 Trisle 重新创建的交互风格。",
   "faq.q8": "退款如何运作？",
   "faq.a8": "很简单 — 如果Trisle不适合您，购买后7天内随时可获得全额退款。无需提问。只需向支持团队提供您的订单详情，Polar.sh会将其处理并退回至您的原始支付方式。",
+  "faq.q9": "我需要root我的手机吗？",
+  "faq.a9": "不需要。Trisle 像普通应用一样安装，只需要两个标准的Android权限——在其他应用上层显示和通知访问。两者都通过Android自己的系统对话框授予，各点一次即可。无需root，无需修改系统文件，无需特殊工具。",
   "footer.tagline": "Android 的灵动岛 — 流畅、私密且毫不妥协的单色。",
   "footer.cta": "获取 Trisle — €5.99",
   "footer.rights": "© {year} Trisle. 保留所有权利。",
@@ -247,5 +249,6 @@
   "compare.r3": "真正的实时活动：音乐、地图、通话、计时器",
   "compare.r4": "弹簧物理形变动画与三重岛",
   "compare.yes": "Trisle 包含",
-  "compare.no": "不包含"
+  "compare.no": "不包含",
+  "compare.concede": "说实话？如果你只是想尝鲜，免费的克隆版就够了。Trisle 适合那些追求完美体验的用户——流畅、私密且持续维护。"
 }

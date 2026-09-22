@@ -1,6 +1,6 @@
 {
   "meta.title": "Trisle — Dinamik Ada. Android için.",
-  "meta.description": "Trisle, telefonunuzun üzerindeki her şeyin üzerinde süzülür — müzik, zamanlayıcılar, aramalar, adım adım yönlendirmeler ve her bildirim, akıcı yay fiziklerinde işlenir. Tek bir satın alma. Sonsuza kadar sizin.",
+  "meta.description": "iPhone'un Dynamic Island'ı Android cihazınızda — müzik, zamanlayıcılar, aramalar ve navigasyon her uygulamanın üzerinde. %100 cihaz üzerinde. €5.99 tek seferlik, sonsuza dek sizin.",
   "nav.features": "Özellikler",
   "nav.activities": "Canlı Aktiviteler",
   "nav.customize": "Özelleştir",
@@ -11,7 +11,7 @@
   "hero.badge": "Şimdi iOS 27 tarzı Üçlü Ada ile",
   "hero.title1": "Dinamik Ada.",
   "hero.title2": "Android için.",
-  "hero.desc": "Trisle, telefonunuzun üzerindeki her şeyin üzerinde süzülür — müzik, zamanlayıcılar, aramalar, adım adım yönlendirmeler ve her bildirim, akıcı yay fiziklerinde işlenir. Tek bir satın alma. Sonsuza kadar sizin.",
+  "hero.desc": "Müzik, zamanlayıcılar, aramalar ve adım adım yönergeler her uygulamanın üzerinde akıcı bir yay fizikleriyle süzülüyor — iPhone'un Dynamic Island'ı, Android cihazınızda. Bir dakikadan kısa sürede kurulum. Tek bir satın alma. Sonsuza dek sizin.",
   "hero.cta": "Trisle'ı Edinin — €5.99",
   "hero.explore": "Özellikleri keşfet",
   "hero.check1": "Tek seferlik satın alma",
@@ -171,6 +171,8 @@
   "faq.a7": "Hayır. Trisle, Android için bağımsız olarak geliştirilmiş bir üründür. Apple Inc. ile bağlantılı, onaylanmış veya ilişkili değildir. 'Dynamic Island', Apple Inc.'in bir ticari markasıdır ve burada yalnızca Trisle'ın yeniden ürettiği etkileşim tarzını tanımlamak için referans edilmiştir.",
   "faq.q8": "İadeler nasıl çalışır?",
   "faq.a8": "Kolay — Trisle sizin için değilse, satın alma işleminizden sonraki 7 gün içinde tam iade alırsınız. Hiçbir soru sormadan. Sipariş detaylarınızı destek ekibine iletin ve Polar.sh bunu orijinal ödeme yönteminize işler.",
+  "faq.q9": "Telefonumu root'lamam gerekiyor mu?",
+  "faq.a9": "Hayır. Trisle, herhangi bir normal uygulama gibi kurulur ve iki standart Android izni istiyor — diğer uygulamaların üzerine gelme ve bildirim erişimi. Her ikisi de Android'in kendi sistem diyalogları aracılığıyla verilir, her biri bir dokunuşla. Root gerekmez, değiştirilmiş sistem dosyaları gerekmez, özel araçlar gerekmez.",
   "footer.tagline": "Android için Dynamic Island — akıcı, gizli ve özür dilemeksizin tek renkli.",
   "footer.cta": "Trisle'ı Al — €5.99",
   "footer.rights": "© {year} Trisle. Tüm hakları saklıdır.",
@@ -247,5 +249,6 @@
   "compare.r3": "Gerçek Canlı Etkinlikler: müzik, haritalar, aramalar, zamanlayıcı",
   "compare.r4": "Yay fiziği morphları ve Triple Island",
   "compare.yes": "Trisle’de var",
-  "compare.no": "Yok"
+  "compare.no": "Yok",
+  "compare.concede": "Gerçekten? Sadece bir deneme istiyorsanız ücretsiz bir klon yeterlidir. Trisle, doğru şekilde yapılmasını isteyenler içindir — akıcı, gizli ve sürekli güncel."
 }

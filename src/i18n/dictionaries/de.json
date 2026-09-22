@@ -1,6 +1,6 @@
 {
   "meta.title": "Trisle — Der Dynamic Island. Für Android.",
-  "meta.description": "Trisle schwebt über allem auf deinem Telefon — Musik, Timer, Anrufe, Navigation und jede Benachrichtigung, dargestellt mit flüssigen Federphysik. Einmal kaufen. Für immer dein.",
+  "meta.description": "Der Dynamic Island des iPhone auf Ihrem Android — Musik, Timer, Anrufe und Navigation über jeder App. 100% auf dem Gerät. €5.99 einmalig, für immer Ihr.",
   "nav.features": "Funktionen",
   "nav.activities": "Live-Aktivitäten",
   "nav.customize": "Anpassen",
@@ -11,7 +11,7 @@
   "hero.badge": "Jetzt mit iOS 27-ähnlichem Triple Island",
   "hero.title1": "Der Dynamic Island.",
   "hero.title2": "Für Android.",
-  "hero.desc": "Trisle schwebt über allem auf deinem Telefon — Musik, Timer, Anrufe, Navigation und jede Benachrichtigung, dargestellt mit flüssigen Federphysik. Einmal kaufen. Für immer dein.",
+  "hero.desc": "Musik, Timer, Anrufe und Schritt-für-Schritt-Anleitungen schweben in flüssigen Sprungphysiken über jeder App — der Dynamic Island des iPhone, auf Ihrem Android. Einrichtung unter einer Minute. Einmaliger Kauf. Für immer Ihr.",
   "hero.cta": "Trisle herunterladen — €5.99",
   "hero.explore": "Funktionen erkunden",
   "hero.check1": "Einmaliger Kauf",
@@ -171,6 +171,8 @@
   "faq.a7": "Nein. Trisle ist ein unabhängiges Produkt für Android. Es ist nicht mit Apple Inc. verbunden, wird nicht von ihr empfohlen oder steht mit ihr in Verbindung. 'Dynamic Island' ist ein Markenzeichen von Apple Inc., das hier nur zur Beschreibung des Interaktionsstils verwendet wird, den Trisle nachbildet.",
   "faq.q8": "Wie funktioniert die Rückerstattung?",
   "faq.a8": "Einfach — wenn Trisle nichts für Sie ist, erhalten Sie innerhalb von 7 Tagen nach dem Kauf eine vollständige Rückerstattung. Keine Fragen. Wenden Sie sich einfach mit Ihren Bestelldaten an den Support und Polar.sh bearbeitet die Rückzahlung auf Ihre ursprüngliche Zahlungsmethode.",
+  "faq.q9": "Muss ich mein Telefon rooten?",
+  "faq.a9": "Nein. Trisle installiert sich wie jede normale App und erfragt zwei Standard-Android-Berechtigungen: Anzeige über andere Apps und Benachrichtigungszugriff. Beide werden über Androids eigene Systemdialoge gewährt, jeweils mit einem Klick. Kein Root, keine modifizierten Systemdateien, keine speziellen Werkzeuge.",
   "footer.tagline": "Die Dynamic Island für Android — fließend, privat und unmissverständlich monochrom.",
   "footer.cta": "Trisle holen — €5.99",
   "footer.rights": "© {year} Trisle. Alle Rechte vorbehalten.",
@@ -247,5 +249,6 @@
   "compare.r3": "Echte Live Activities: Musik, Karten, Anrufe, Timer",
   "compare.r4": "Morph-Animationen mit Federphysik & Triple Island",
   "compare.yes": "In Trisle enthalten",
-  "compare.no": "Nicht enthalten"
+  "compare.no": "Nicht enthalten",
+  "compare.concede": "Ehrlich gesagt? Ein kostenloses Klon genügt, wenn Sie nur einen ersten Eindruck möchten. Trisle ist für diejenigen, die es richtig machen wollen — flüssig, privat und gepflegt."
 }

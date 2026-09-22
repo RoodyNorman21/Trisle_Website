@@ -9,7 +9,7 @@ import {
 import { Reveal, SectionLabel } from "./reveal";
 import { useI18n } from "@/i18n/context";
 
-const FAQ_KEYS = [1, 2, 3, 4, 5, 6, 7, 8];
+const FAQ_KEYS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export function Faq() {
   const { t } = useI18n();

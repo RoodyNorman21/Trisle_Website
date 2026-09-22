@@ -123,6 +123,13 @@ export function Comparison() {
             </div>
           </div>
         </Reveal>
+
+        {/* Honest "who each option is for" line — conceding builds trust */}
+        <Reveal delay={0.18}>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-[13.5px] leading-relaxed text-zinc-500">
+            {t("compare.concede")}
+          </p>
+        </Reveal>
       </div>
     </section>
   );
