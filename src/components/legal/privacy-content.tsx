@@ -109,7 +109,7 @@ export function PrivacyContent() {
       <UL>
         <LI>
           pages viewed, session duration, referrer, and outbound link clicks
-          (including clicks on the Product Hunt badge and buy buttons);
+          (such as clicks on the buy buttons);
         </LI>
         <LI>
           technical attributes of your browser and device: browser type and

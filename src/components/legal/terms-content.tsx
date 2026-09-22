@@ -259,10 +259,10 @@ export function TermsContent() {
       </P>
       <Note>
         Apple, iPhone, iOS, Dynamic Island, Android and Google are
-        trademarks of Apple Inc. and Google LLC respectively. Product Hunt
-        is a trademark of Product Hunt Co. Trisle is an independent product
-        and is not affiliated with, endorsed by, or sponsored by any of
-        these companies. References to their products are descriptive only.
+        trademarks of Apple Inc. and Google LLC respectively. Trisle is an
+        independent product and is not affiliated with, endorsed by, or
+        sponsored by any of these companies. References to their products
+        are descriptive only.
       </Note>
 
       <H2 id="third-party">13. Third-party services and links</H2>
@@ -270,11 +270,10 @@ export function TermsContent() {
         The Website and purchase flow rely on independent third parties:
         Polar for checkout, payment, taxes and refunds; Google Analytics
         (only if you consented — see the Privacy Policy) for aggregate
-        statistics; GitHub Pages for hosting; and outbound links such as
-        the Product Hunt badge. Those services are governed by their own
-        terms and privacy policies, and we are not responsible for their
-        content or behaviour. Links to third-party sites are provided for
-        convenience and do not imply endorsement.
+        statistics; and GitHub Pages for hosting. Those services are
+        governed by their own terms and privacy policies, and we are not
+        responsible for their content or behaviour. Links to third-party
+        sites are provided for convenience and do not imply endorsement.
       </P>
 
       <H2 id="warranty">14. Disclaimer of warranties</H2>
