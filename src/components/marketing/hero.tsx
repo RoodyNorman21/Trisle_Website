@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Check, Download, RotateCcw, ShieldCheck } from "lucide-react";
 import { PhoneFrame } from "./phone-frame";
+import { ProductHuntBadge } from "./product-hunt-badge";
 import { Reveal } from "./reveal";
 import { useI18n } from "@/i18n/context";
 
@@ -89,6 +90,13 @@ export function Hero({ onBuy }: { onBuy: () => void }) {
                 <RotateCcw className="h-3.5 w-3.5 text-zinc-300" />
                 {t("hero.check4")}
               </span>
+            </div>
+          </Reveal>
+
+          {/* Launch proof — official PH widget (dark theme matches palette) */}
+          <Reveal delay={0.36}>
+            <div className="mt-8">
+              <ProductHuntBadge location="hero" eager />
             </div>
           </Reveal>
         </div>

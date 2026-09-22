@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Download } from "lucide-react";
 import { openPolarCheckout } from "@/lib/polar";
+import { ProductHuntBadge } from "./product-hunt-badge";
 import { useI18n } from "@/i18n/context";
 
 const NAV = [
@@ -38,6 +39,10 @@ export function Footer() {
             <p className="mt-3 text-[12.5px] leading-relaxed text-zinc-600">
               {t("footer.tagline")}
             </p>
+            {/* Official Product Hunt badge — permanent home under the tagline */}
+            <div className="mt-5">
+              <ProductHuntBadge location="footer" />
+            </div>
           </div>
 
           {/* Nav */}
