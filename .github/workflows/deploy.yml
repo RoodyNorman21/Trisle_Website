@@ -23,7 +23,9 @@ jobs:
       NEXT_PUBLIC_POLAR_CHECKOUT_LINK: https://buy.polar.sh/polar_cl_jkMs1ZdTOWI93aVTCiwdz1zKZKPLWr78XVJwC2IsUjI
       # Public build-time config, passed from repo Variables (Settings > Secrets and variables > Actions > Variables).
       # Unset variables expand to empty strings and the features simply stay omitted.
-      NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ vars.NEXT_PUBLIC_GA_MEASUREMENT_ID }}
+      # GA Measurement ID: repo Variable wins if set; fallback below activates the
+      # live property G-0Z165PW33N (a Measurement ID is public client-side info).
+      NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ vars.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-0Z165PW33N' }}
       NEXT_PUBLIC_GA_CONSENT: ${{ vars.NEXT_PUBLIC_GA_CONSENT }}
       NEXT_PUBLIC_GSC_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_GSC_SITE_VERIFICATION }}
       NEXT_PUBLIC_BING_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_BING_SITE_VERIFICATION }}
