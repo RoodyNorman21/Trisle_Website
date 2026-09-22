@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Download } from "lucide-react";
 import { openPolarCheckout } from "@/lib/polar";
+import { requestOpenConsent } from "@/lib/consent";
 import { ProductHuntBadge } from "./product-hunt-badge";
 import { useI18n } from "@/i18n/context";
 
@@ -81,6 +82,29 @@ export function Footer() {
             {t("footer.payments")}
             <span className="font-semibold text-zinc-400">Polar.sh</span>
           </span>
+        </div>
+
+        {/* Legal — GDPR: consent can be withdrawn as easily as it was given */}
+        <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-[11.5px] text-zinc-600">
+          <Link
+            href="/privacy"
+            className="transition-colors hover:text-zinc-300"
+          >
+            {t("footer.privacy")}
+          </Link>
+          <Link
+            href="/terms"
+            className="transition-colors hover:text-zinc-300"
+          >
+            {t("footer.terms")}
+          </Link>
+          <button
+            type="button"
+            onClick={requestOpenConsent}
+            className="transition-colors hover:text-zinc-300"
+          >
+            {t("footer.cookieSettings")}
+          </button>
         </div>
       </div>
     </footer>
