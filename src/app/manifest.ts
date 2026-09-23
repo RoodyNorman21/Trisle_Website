@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Trisle — The Dynamic Island for Android",
     short_name: "Trisle",
     description:
-      "iPhone-style Dynamic Island for Android. Real Live Activities, smart alerts and fluid spring animations — 100% on-device. €5.99 one-time purchase.",
+      "iPhone-style Dynamic Island for Android. Real Live Activities, smart alerts and fluid spring animations — 100% on-device. €3.99 one-time purchase.",
     start_url: "/Trisle_Website/",
     display: "browser",
     background_color: "#000000",

@@ -97,7 +97,7 @@ def img1_hook():
     d.text((W // 2, 545), "The Dynamic Island. For Android.", font=f_tag, fill=BODY, anchor="mm")
 
     x = W // 2 - 260
-    chip(d, x, 660, "€5.99 once — yours forever", f_small)
+    chip(d, x, 660, "€3.99 once — yours forever", f_small)
     chip(d, x + 480, 660, "No subscription", f_small)
     d.text((W // 2, 800), "trisle-app.github.io/Trisle_Website", font=f_small,
            fill=MUTED, anchor="mm")
@@ -214,7 +214,7 @@ def img6_cta():
     f_chip = font(REG, 32)
     capsule(d, W // 2, 200, 520, 96, eq=True)
     d.text((W // 2, 420), "Get Trisle", font=f_h, fill=WHITE, anchor="mm")
-    d.text((W // 2, 530), "€5.99 once — yours forever.", font=f_sub, fill=BODY, anchor="mm")
+    d.text((W // 2, 530), "€3.99 once — yours forever.", font=f_sub, fill=BODY, anchor="mm")
     labels = ["7-day easy refunds", "100% on-device", "No ads · no tracking", "Android 7.0+"]
     gap, pad = 26, 22
     widths = []

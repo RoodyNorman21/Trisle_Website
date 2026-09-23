@@ -58,7 +58,7 @@ export function Comparison() {
                 </span>
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.05] px-2.5 py-1 text-[10px] font-semibold text-zinc-200">
                   <Check className="h-3 w-3" />
-                  €5.99
+                  €3.99
                 </span>
               </div>
 

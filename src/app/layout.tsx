@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Trisle — The Dynamic Island for Android",
   description:
-    "The iPhone's Dynamic Island on your Android — music, timers, calls and navigation floating above every app. 100% on-device. €5.99 once, yours forever.",
+    "The iPhone's Dynamic Island on your Android — music, timers, calls and navigation floating above every app. 100% on-device. €3.99 once, yours forever.",
   keywords: [
     "Trisle",
     "Dynamic Island",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Trisle — The Dynamic Island for Android",
     description:
-      "Real Live Activities, fluid spring physics and total privacy — 100% on-device. One purchase of €5.99, yours forever.",
+      "Real Live Activities, fluid spring physics and total privacy — 100% on-device. One purchase of €3.99, yours forever.",
     url: SITE_URL,
     siteName: "Trisle",
     type: "website",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
         url: "https://trisle-app.github.io/Trisle_Website/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Trisle — The Dynamic Island for Android. €5.99 one-time purchase.",
+        alt: "Trisle — The Dynamic Island for Android. €3.99 one-time purchase.",
       },
     ],
   },
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Trisle — The Dynamic Island for Android",
     description:
-      "Real Live Activities, fluid spring physics and total privacy — 100% on-device. One purchase of €5.99, yours forever.",
+      "Real Live Activities, fluid spring physics and total privacy — 100% on-device. One purchase of €3.99, yours forever.",
     images: ["https://trisle-app.github.io/Trisle_Website/og.jpg"],
   },
   robots: {
@@ -123,7 +123,7 @@ function productJsonLd() {
       "iPhone-style Dynamic Island for Android with real Live Activities, smart alerts and fluid spring animations. One-time purchase.",
     offers: {
       "@type": "Offer",
-      price: "5.99",
+      price: "3.99",
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
       url: SITE_URL,

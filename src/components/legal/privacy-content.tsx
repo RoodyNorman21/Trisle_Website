@@ -122,7 +122,7 @@ export function PrivacyContent() {
           addresses, and IP addresses are never used by us to identify you;
         </LI>
         <LI>
-          events such as purchase conversions (value €5.99, currency EUR,
+          events such as purchase conversions (value €3.99, currency EUR,
           and the Polar checkout reference used as the transaction
           identifier) and cookie-banner choices.
         </LI>

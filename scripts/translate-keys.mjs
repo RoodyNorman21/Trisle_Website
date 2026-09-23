@@ -51,7 +51,7 @@ const TARGETS = [
 
 const KEEP_AS_IS = [
   "Trisle", "Polar.sh", "iOS", "Android", "iPhone", "Apple Inc.", "OLED",
-  "APK", "GPU", "€5.99", "v2", "Market St", "Spotify", "YouTube Music",
+  "APK", "GPU", "€3.99", "v2", "Market St", "Spotify", "YouTube Music",
   "Apple Music", "Google Maps", "Dynamic Island", "Notification Listener API",
 ];
 

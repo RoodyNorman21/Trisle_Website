@@ -11,7 +11,7 @@ import {
 
 /**
  * Terms & Conditions content (governing English version).
- * Facts locked to the product reality: €5.99 one-time purchase via
+ * Facts locked to the product reality: €3.99 one-time purchase via
  * Polar.sh (merchant of record), 7-day refund promise, on-device app,
  * two standard Android permissions.
  */
@@ -144,7 +144,7 @@ export function TermsContent() {
 
       <H2 id="purchase">7. Purchase, price and payment</H2>
       <P>
-        The App is offered for a one-time price of <B>€5.99</B>. Checkout is
+        The App is offered for a one-time price of <B>€3.99</B>. Checkout is
         operated by Polar as <B>merchant of record</B>: Polar collects the
         payment, handles applicable VAT/GST and other indirect taxes,
         issues the receipt, and processes refunds. We never receive or
@@ -299,7 +299,7 @@ export function TermsContent() {
       <P>
         To the maximum extent permitted by law, our aggregate liability
         arising out of or in connection with the App or the Website is
-        limited to the amount you actually paid for the App (€5.99).
+        limited to the amount you actually paid for the App (€3.99).
       </P>
       <P>
         Nothing in these Terms excludes or limits liability that cannot be

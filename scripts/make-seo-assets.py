@@ -123,7 +123,7 @@ chip_x, chip_y, chip_w, chip_h = 92, 500, 380, 64
 d.rounded_rectangle([chip_x, chip_y, chip_x + chip_w, chip_y + chip_h], radius=32,
                     fill=(255, 255, 255, 14), outline=(255, 255, 255, 46), width=2)
 f_chip = ImageFont.truetype(BOLD, 27)
-d.text((chip_x + 30, chip_y + 16), "€5.99", font=f_chip, fill=WHITE)
+d.text((chip_x + 30, chip_y + 16), "€3.99", font=f_chip, fill=WHITE)
 f_chip2 = ImageFont.truetype(REG, 24)
 d.text((chip_x + 132, chip_y + 19), "one-time · yours forever", font=f_chip2, fill=ZINC)
 

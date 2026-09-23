@@ -88,7 +88,7 @@ export function Pricing() {
 
             <div className="mt-6 flex items-end gap-2">
               <span className="text-6xl font-bold tracking-tight text-white">
-                €5.99
+                €3.99
               </span>
               <span className="pb-1.5 text-[13px] text-zinc-500">
                 {t("pricing.once")}

@@ -22,7 +22,7 @@ function parseJsonLoose(text) {
   return JSON.parse(t.slice(start, end + 1));
 }
 
-const KEEP = ["Trisle","Polar.sh","iOS","Android","iPhone","Apple Inc.","OLED","APK","GPU","€5.99","v2","WH-1000XM5","Blinding Lights","The Weeknd","Alessandra","Daniel Reyes","Market St","Spotify","YouTube Music","Apple Music","Google Maps","Notification Listener API"];
+const KEEP = ["Trisle","Polar.sh","iOS","Android","iPhone","Apple Inc.","OLED","APK","GPU","€3.99","v2","WH-1000XM5","Blinding Lights","The Weeknd","Alessandra","Daniel Reyes","Market St","Spotify","YouTube Music","Apple Music","Google Maps","Notification Listener API"];
 
 const zai = await ZAI.create();
 for (let i = 0; i < missing.length; i += 6) {

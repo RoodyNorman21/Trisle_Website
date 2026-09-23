@@ -17,7 +17,7 @@ import { gaEvent } from "./google-analytics";
  * Requires the Polar dashboard Success URL to be set to:
  *   https://trisle-app.github.io/Trisle_Website/success?checkout_id={CHECKOUT_ID}
  */
-const PRICE_EUR = 5.99;
+const PRICE_EUR = 3.99;
 
 export function PurchaseEvent() {
   useEffect(() => {

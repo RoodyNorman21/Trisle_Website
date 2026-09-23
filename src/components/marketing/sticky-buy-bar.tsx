@@ -80,7 +80,7 @@ export function StickyBuyBar() {
           <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/85 p-2.5 pl-4 shadow-[0_20px_60px_-20px_rgba(0,0,0,1)] backdrop-blur-xl">
             <div className="min-w-0 flex-1 leading-tight">
               <span className="text-[17px] font-bold tabular-nums text-white">
-                €5.99
+                €3.99
               </span>{" "}
               <span className="text-[11px] text-zinc-500">
                 {t("pricing.once")}

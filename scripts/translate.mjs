@@ -58,7 +58,7 @@ const KEEP_AS_IS = [
   "OLED",
   "APK",
   "GPU",
-  "€5.99",
+  "€3.99",
   "v2",
   "WH-1000XM5",
   "Blinding Lights",
