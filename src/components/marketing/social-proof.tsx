@@ -5,13 +5,11 @@ import {
   Infinity as InfinityIcon,
   RotateCcw,
   ShieldCheck,
-  Users,
   Zap,
 } from "lucide-react";
 import { useI18n } from "@/i18n/context";
 
 const ITEMS = [
-  { icon: Users, key: "proof.1" },
   { icon: RotateCcw, key: "proof.2" },
   { icon: InfinityIcon, key: "proof.3" },
   { icon: ShieldCheck, key: "proof.4" },
