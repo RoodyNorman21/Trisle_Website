@@ -257,5 +257,12 @@
   "success.unlocked.refresh": "Lấy liên kết mới",
   "toast.desc": "Thanh toán an toàn Polar.sh sẽ được tích hợp tại thời điểm ra mắt — trong lúc này, hãy tận hưởng tour tham quan.",
   "toast.footerDesc": "Thanh toán an toàn Polar.sh sẽ được tích hợp tại thời điểm ra mắt.",
-  "toast.title": "Thanh toán sắp ra mắt"
+  "toast.title": "Thanh toán sắp ra mắt",
+  "faq.q10": "Tại sao Trisle không có trên Google Play Store?",
+  "faq.a10": "Tính đơn giản: bán trực tiếp nghĩa là không mất hoa hồng 30% của cửa hàng, và khoản tiết kiệm đó thuộc về bạn — Trisle giữ giá 3,99 €, trong khi bản trên Play Store phải đắt hơn hẳn. Về bảo mật không có gì thay đổi: APK được ký mật mã như mọi ứng dụng cửa hàng, thanh toán và thuế do Polar.sh xử lý với tư cách merchant of record chính thức, và mọi giao dịch đều được bảo đảm hoàn tiền đầy đủ trong 7 ngày. Việc phân phối qua các cửa hàng ứng dụng khác đang được cân nhắc cho tương lai.",
+  "faq.q11": "Việc thanh toán và cài đặt APK có an toàn không?",
+  "faq.a11": "Có. Thanh toán diễn ra qua Polar.sh — một merchant of record châu Âu với thanh toán mã hóa SSL, hóa đơn VAT chính thức và hỗ trợ thẻ, Apple Pay và Google Pay; chúng tôi không bao giờ nhìn thấy thông tin thanh toán của bạn. APK của Trisle được ký như mọi ứng dụng từ cửa hàng chính thức, chỉ yêu cầu hai quyền Android tiêu chuẩn (hiển thị trên các ứng dụng khác và quyền truy cập thông báo), và mọi thứ chạy ngay trên thiết bị của bạn. Nếu chưa hài lòng: hoàn tiền đầy đủ trong 7 ngày, không hỏi lý do.",
+  "pricing.step1": "Thanh toán an toàn — thẻ, Apple Pay hoặc Google Pay",
+  "pricing.step2": "Email ngay lập tức với khóa bản quyền + liên kết tải APK",
+  "pricing.step3": "Cài đặt dưới hai phút — không root, có hướng dẫn"
 }

@@ -257,5 +257,12 @@
   "success.unlocked.refresh": "새 링크 받기",
   "toast.desc": "Polar.sh 보안 결제가 출시 시 연결될 예정입니다 — 지금은 투어를 즐겨보세요.",
   "toast.footerDesc": "Polar.sh 보안 결제가 출시 시 연결될 예정입니다.",
-  "toast.title": "체크아웃 곧 출시"
+  "toast.title": "체크아웃 곧 출시",
+  "faq.q10": "Trisle은 왜 Google Play 스토어에 없나요?",
+  "faq.a10": "간단한 계산입니다: 직접 판매하면 스토어의 30% 수수료가 없고 그 절약이 고객에게 돌아갑니다 — Trisle은 3.99유로를 유지하며, Play Store 버전은 상당히 더 비싸야 할 것입니다. 보안은 동일합니다: APK는 스토어 앱과 마찬가지로 암호화 서명되어 있고, 결제와 세금은 Polar.sh가 공식 merchant of record로 처리하며, 모든 구매는 7일 전액 환불 보증으로 보호됩니다. 다른 앱 스토어를 통한 배포도 향후 검토 중입니다.",
+  "faq.q11": "결제와 APK 설치가 안전한가요?",
+  "faq.a11": "네. 결제는 SSL 암호화 결제, 정식 VAT 인보이스, 카드·Apple Pay·Google Pay를 지원하는 유럽 merchant of record인 Polar.sh를 통해 처리되며, 결제 정보는 당사가 전혀 볼 수 없습니다. Trisle APK는 공식 스토어 앱과 동일하게 서명되어 있고, 표준 Android 권한 두 개(다른 앱 위에 표시, 알림 접근)만 요구하며, 모든 것이 기기에서 실행됩니다. 만약 마음에 들지 않으면: 7일 이내 사유 불문 전액 환불됩니다.",
+  "pricing.step1": "안전한 결제 — 카드, Apple Pay, Google Pay",
+  "pricing.step2": "라이선스 키 + APK 다운로드 링크를 즉시 이메일로 발송",
+  "pricing.step3": "2분 이내 설치 — 루트 불필요, 가이드 포함"
 }

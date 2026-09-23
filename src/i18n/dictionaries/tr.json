@@ -257,5 +257,12 @@
   "success.unlocked.refresh": "Yeni bağlantı al",
   "toast.desc": "Polar.sh güvenli ödeme başlangıçta bağlanacak — şimdiden turun keyfini çıkarın.",
   "toast.footerDesc": "Polar.sh güvenli ödeme başlangıçta bağlanacak.",
-  "toast.title": "Ödeme yakında başlıyor"
+  "toast.title": "Ödeme yakında başlıyor",
+  "faq.q10": "Trisle neden Google Play Store'da yok?",
+  "faq.a10": "Basit matematik: doğrudan satış, mağazanın %30 komisyonunu ortadan kaldırır ve bu tasarruf size kalır — Trisle 3,99 € olarak kalır; bir Play Store sürümü ise belirgin şekilde daha pahalı olmak zorunda kalırdı. Güvenlik açısından hiçbir şey değişmiyor: APK, mağaza uygulamaları gibi kriptografik olarak imzalanır; ödemeler ve vergiler Polar.sh tarafından resmi merchant of record olarak işlenir ve her satın alma, 7 günlük tam para iade garantisiyle korunur. Diğer uygulama mağazalarından dağıtım gelecek için değerlendiriliyor.",
+  "faq.q11": "Ödeme yapmak ve APK'yı kurmak güvenli mi?",
+  "faq.a11": "Evet. Ödeme, SSL şifreli ödeme, resmi KDV faturaları ve kart, Apple Pay ve Google Pay desteği sunan Avrupa merkezli bir merchant of record olan Polar.sh üzerinden yapılır; ödeme bilgilerinizi asla görmeyiz. Trisle APK'sı resmi bir mağazadaki her uygulama gibi imzalanır, yalnızca iki standart Android izni ister (uygulamaların üzerinde gösterme ve bildirim erişimi) ve her şey cihazınızda çalışır. Bir sorun olursa: 7 gün içinde soru sormadan tam iade.",
+  "pricing.step1": "Güvenli ödeme — kart, Apple Pay veya Google Pay",
+  "pricing.step2": "Lisans anahtarınız + APK indirme bağlantısı ile anında e-posta",
+  "pricing.step3": "İki dakikadan kısa kurulum — root yok, kılavuz dahil"
 }

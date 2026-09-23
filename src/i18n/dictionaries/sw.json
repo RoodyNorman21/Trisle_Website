@@ -257,5 +257,12 @@
   "success.unlocked.refresh": "Pata kiungo kipya",
   "toast.desc": "Malipo salama ya Polar.sh zitawekwa wakati wa uanzishaji — kwa sasa, furahia ziara.",
   "toast.footerDesc": "Malipo salama ya Polar.sh zitawekwa wakati wa uanzishaji.",
-  "toast.title": "Malipo iko tayari hivi karibuni"
+  "toast.title": "Malipo iko tayari hivi karibuni",
+  "faq.q10": "Kwa nini Trisle haipo kwenye Google Play Store?",
+  "faq.a10": "Hesabu rahisi: kuuza moja kwa moja kumaanisha hakuna asilimia 30 ya jumla ya duka, na ile yaokoa ni yako — Trisle inabaki kwa €3.99, wakati toleo la Play Store lingelazimika kuwa na bei kubwa zaidi. Kwa upande wa usalama hakuna kilichobadilika: APK imesainiwa kwa utaratibu wa kisasa kama programu yoyote ya duka, malipo na kodi yanashughulikiwa na Polar.sh kama muuzaji rasmi (merchant of record), na kila ununuzi umelindwa na dhamana ya marejesho kamili ya siku 7. Usambazaji kupitia maduka mengine ya programu unapimwa kwa siku zijazo.",
+  "faq.q11": "Je, kulipa na kusakinisha APK ni salama?",
+  "faq.a11": "Ndiyo. Malipo hupitia Polar.sh — muuzaji rasmi wa Ulaya ambaye ana malipo yaliyosimbwa kwa SSL, ankara za VAT rasmi na msaada wa kadi, Apple Pay na Google Pay; hatuoni kamwe taarifa zako za malipo. APK ya Trisle imesainiwa kama programu yoyote ya duka rasmi, inaomba ruhusa mbili tu za kawaida za Android (kuonekana juu ya programu nyingine na ufikiaji wa taarifa), na kila kitu huenda kwenye kifaa chako. Na ikiwa kitu hakikupendezi: marejesho kamili ndani ya siku 7 bila maswali.",
+  "pricing.step1": "Lipa kwa usalama — kadi, Apple Pay au Google Pay",
+  "pricing.step2": "Barua pepe ya papo hapo yenye ufunguo wa leseni + kiungo cha kupakua APK",
+  "pricing.step3": "Usakinishaji chini ya dakika mbili — hakuna root, mwongozo umejumuishwa"
 }

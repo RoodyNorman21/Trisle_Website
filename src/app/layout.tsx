@@ -95,7 +95,7 @@ export const viewport: Viewport = {
 /** FAQ rich-result markup, built from the English dictionary at build time. */
 function faqJsonLd() {
   const entries: { q: string; a: string }[] = [];
-  for (let i = 1; i <= 9; i++) {
+  for (let i = 1; i <= 11; i++) {
     const q = en[`faq.q${i}`];
     const a = en[`faq.a${i}`];
     if (q && a) entries.push({ q, a });

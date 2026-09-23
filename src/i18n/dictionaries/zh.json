@@ -257,5 +257,12 @@
   "success.unlocked.refresh": "获取新链接",
   "toast.desc": "Polar.sh 安全结账将在发布时接入 — 目前，请享受导览。",
   "toast.footerDesc": "Polar.sh 安全结账将在发布时接入。",
-  "toast.title": "结账即将推出"
+  "toast.title": "结账即将推出",
+  "faq.q10": "为什么 Trisle 不上架 Google Play 商店？",
+  "faq.a10": "算一笔简单的账：直接销售意味着没有商店 30% 的抽成，这部分节省直接让利给用户——Trisle 保持在 3.99 欧元，而 Play 商店版本的成本会明显更高。安全性毫无差别：APK 与商店应用一样经过加密签名，支付和税务由 Polar.sh 作为官方商户（merchant of record）处理，每笔购买均享 7 天无理由全额退款。未来也会考虑通过其他应用商店分发。",
+  "faq.q11": "付款和安装 APK 安全吗？",
+  "faq.a11": "安全。付款通过 Polar.sh 处理——这是一家欧洲官方商户，提供 SSL 加密结账、正式增值税发票，并支持银行卡、Apple Pay 和 Google Pay；我们完全看不到您的支付信息。Trisle 的 APK 与任何官方商店应用一样经过签名，只请求两项标准 Android 权限（显示在其他应用上层和通知访问权限），并且所有功能都在您的设备上运行。如果不符合预期：7 天内无理由全额退款。",
+  "pricing.step1": "安全支付 — 银行卡、Apple Pay 或 Google Pay",
+  "pricing.step2": "即时邮件发送许可密钥 + APK 下载链接",
+  "pricing.step3": "两分钟内完成安装 — 无需 root，附安装指南"
 }

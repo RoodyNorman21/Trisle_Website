@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import {
   ArrowRight,
   BadgeCheck,
+  Download,
   Infinity as InfinityIcon,
   Layers,
+  Mail,
   Music2,
   RotateCcw,
   ShieldCheck,
@@ -118,6 +120,22 @@ export function Pricing() {
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
             </button>
 
+            {/* What happens after you pay — kills the "what do I actually get?" anxiety */}
+            <ul className="mt-4 space-y-2.5 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4">
+              <li className="flex items-start gap-2.5 text-[12px] leading-snug text-zinc-300">
+                <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-zinc-400" />
+                {t("pricing.step1")}
+              </li>
+              <li className="flex items-start gap-2.5 text-[12px] leading-snug text-zinc-300">
+                <Mail className="mt-0.5 h-3.5 w-3.5 shrink-0 text-zinc-400" />
+                {t("pricing.step2")}
+              </li>
+              <li className="flex items-start gap-2.5 text-[12px] leading-snug text-zinc-300">
+                <Download className="mt-0.5 h-3.5 w-3.5 shrink-0 text-zinc-400" />
+                {t("pricing.step3")}
+              </li>
+            </ul>
+
             {/* Refund promise */}
             <div className="mt-4 flex items-start gap-3 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4 text-start">
               <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/[0.06] ring-1 ring-white/10">
@@ -138,6 +156,23 @@ export function Pricing() {
               {t("pricing.checkoutA")}{" "}
               <span className="font-semibold text-zinc-400">Polar.sh</span>{" "}
               {t("pricing.checkoutB")}
+            </div>
+
+            {/* Payment-method familiarity — brand names read as trust in every locale */}
+            <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5">
+              {["VISA", "Mastercard", "AMEX", "Apple Pay", "G Pay"].map(
+                (brand) => (
+                  <span
+                    key={brand}
+                    className="rounded-md border border-white/10 bg-white/[0.04] px-2 py-1 text-[10px] font-semibold tracking-wide text-zinc-400"
+                  >
+                    {brand}
+                  </span>
+                ),
+              )}
+              <span className="px-1 font-mono text-[10px] tracking-wider text-zinc-600">
+                SSL
+              </span>
             </div>
           </motion.div>
         </Reveal>

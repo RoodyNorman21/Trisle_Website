@@ -257,5 +257,12 @@
   "success.unlocked.refresh": "Dapatkan tautan baru",
   "toast.desc": "Checkout aman Polar.sh akan terhubung saat peluncuran — untuk sementara, nikmati tur.",
   "toast.footerDesc": "Checkout aman Polar.sh akan terhubung saat peluncuran.",
-  "toast.title": "Checkout segera hadir"
+  "toast.title": "Checkout segera hadir",
+  "faq.q10": "Mengapa Trisle tidak ada di Google Play Store?",
+  "faq.a10": "Hitungan sederhana: menjual langsung berarti tanpa komisi 30% milik toko, dan penghematan itu untuk Anda — Trisle tetap 3,99 €, sementara versi Play Store harus dijual jauh lebih mahal. Dari sisi keamanan tidak ada yang berubah: APK ditandatangani secara kriptografis seperti aplikasi toko mana pun, pembayaran dan pajak ditangani Polar.sh sebagai merchant of record resmi, dan setiap pembelian dilindungi jaminan pengembalian dana penuh selama 7 hari. Distribusi melalui toko aplikasi lain sedang dipertimbangkan untuk masa depan.",
+  "faq.q11": "Apakah membayar dan memasang APK itu aman?",
+  "faq.a11": "Aman. Pembayaran diproses melalui Polar.sh — merchant of record Eropa dengan checkout terenkripsi SSL, faktur PPN resmi, serta dukungan kartu, Apple Pay, dan Google Pay; kami tidak pernah melihat data pembayaran Anda. APK Trisle ditandatangani seperti aplikasi apa pun di toko resmi, hanya meminta dua izin standar Android (tampil di atas aplikasi lain dan akses notifikasi), dan semuanya berjalan di perangkat Anda. Kalau ada yang kurang pas: pengembalian dana penuh dalam 7 hari tanpa pertanyaan.",
+  "pricing.step1": "Bayar dengan aman — kartu, Apple Pay, atau Google Pay",
+  "pricing.step2": "Email instan berisi kunci lisensi + tautan unduhan APK",
+  "pricing.step3": "Terpasang dalam kurang dari dua menit — tanpa root, panduan disertakan"
 }

@@ -257,5 +257,12 @@
   "success.unlocked.refresh": "Ottieni un link nuovo",
   "toast.desc": "Il checkout sicuro di Polar.sh sarà integrato al lancio — per ora, goditi il tour.",
   "toast.footerDesc": "Il checkout sicuro di Polar.sh sarà integrato al lancio.",
-  "toast.title": "Checkout in arrivo a breve"
+  "toast.title": "Checkout in arrivo a breve",
+  "faq.q10": "Perché Trisle non è sul Google Play Store?",
+  "faq.a10": "Conti semplici: vendere direttamente evita la commissione del 30% dello store, e quel risparmio va a te — Trisle resta a 3,99 €, mentre una versione Play Store dovrebbe costare parecchio di più. Sulla sicurezza non cambia nulla: l'APK è firmata crittograficamente come qualsiasi app dello store, pagamenti e tasse sono gestiti da Polar.sh come merchant of record ufficiale, e ogni acquisto è coperto dalla garanzia di rimborso completo di 7 giorni. La distribuzione su altri store è in valutazione per il futuro.",
+  "faq.q11": "È sicuro pagare e installare l'APK?",
+  "faq.a11": "Sì. Il pagamento passa attraverso Polar.sh, un merchant of record europeo con checkout cifrato SSL, fatture IVA ufficiali e supporto per carte, Apple Pay e Google Pay; non vediamo mai i tuoi dati di pagamento. L'APK di Trisle è firmata come qualsiasi app di uno store ufficiale, richiede solo due permessi Android standard (sovrapposizione alle altre app e accesso alle notifiche) e tutto funziona sul tuo dispositivo. E se qualcosa non va: rimborso completo entro 7 giorni, senza domande.",
+  "pricing.step1": "Paga in sicurezza — carta, Apple Pay o Google Pay",
+  "pricing.step2": "Email istantanea con chiave di licenza + download dell'APK",
+  "pricing.step3": "Installazione in meno di due minuti — senza root, guida inclusa"
 }
